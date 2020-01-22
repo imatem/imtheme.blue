@@ -6,7 +6,7 @@
 imtheme.blue
 ============
 
-Tell me what your product does
+Responsive Theme for IM, 2020
 
 Features
 --------
@@ -17,22 +17,14 @@ Features
 Examples
 --------
 
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
+This Theme can be seen in action at the following sites:
+- www.matem.unam.mx
 
 
 Documentation
 -------------
 
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
+Full documentation for end users can be found in the "docs" folder, and is also available online at https://github.com/collective/imtheme.blue/docs
 
 
 Installation
@@ -51,19 +43,29 @@ Install imtheme.blue by adding it to your buildout::
 and then running ``bin/buildout``
 
 
+Developmet
+----------
+
+.. code-block:: bash
+
+    $ virtualenv-2.7 --no-setuptools --clear .
+    $ ./bin/pip install -r requirements.txt
+    $ ./bin/buildout
+
+
 Contribute
 ----------
 
 - Issue Tracker: https://github.com/collective/imtheme.blue/issues
 - Source Code: https://github.com/collective/imtheme.blue
-- Documentation: https://docs.plone.org/foo/bar
+- Documentation: https://github.com/collective/imtheme.blue/docs
 
 
 Support
 -------
 
 If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+We have a mailing list located at: informatica.academica@matem.unam.mx
 
 
 License
