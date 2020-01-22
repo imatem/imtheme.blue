@@ -29,7 +29,7 @@ setup(
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
     keywords='Python Plone',
-    author='Gildardo Bautista',
+    author='Informática Académica',
     author_email='gil@im.unam.mx',
     url='https://github.com/collective/imtheme.blue',
     project_urls={
