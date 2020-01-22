@@ -48,15 +48,15 @@ setup(
     install_requires=[
         'setuptools',
         # -*- Extra requirements: -*-
+        'plone.app.themingplugins',
+        'collective.themefragments',
         'z3c.jbot',
-        'Products.GenericSetup>=1.8.2',
         'plone.api>=1.8.4',
-        'plone.restapi',
-        'plone.app.dexterity',
-        'plone.app.referenceablebehavior',
-        'plone.app.relationfield',
-        'plone.app.lockingbehavior',
-        'plone.schema',
+        # 'plone.app.dexterity',
+        # 'plone.app.referenceablebehavior',
+        # 'plone.app.relationfield',
+        # 'plone.app.lockingbehavior',
+        # 'plone.schema',
     ],
     extras_require={
         'test': [

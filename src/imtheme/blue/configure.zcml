@@ -23,7 +23,6 @@
       directory="profiles/default"
       description="Installs the imtheme.blue add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
-      post_handler=".setuphandlers.post_install"
       />
 
   <genericsetup:registerProfile
@@ -32,7 +31,6 @@
       directory="profiles/uninstall"
       description="Uninstalls the imtheme.blue add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
-      post_handler=".setuphandlers.uninstall"
       />
 
   <utility
@@ -41,5 +39,12 @@
       />
 
   <!-- -*- extra stuff goes here -*- -->
+
+  <plone:static
+      directory="theme"
+      type="theme"
+      name="im-theme-blue"
+      />
+
 
 </configure>
