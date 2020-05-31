@@ -27,6 +27,32 @@ Documentation
 Full documentation for end users can be found in the "docs" folder, and is also available online at https://github.com/collective/imtheme.blue/docs
 
 
+Before Installation
+-------------------
+
+* Configuración del tema:
+    * Desactivar Plone Theme: complex
+* Desinstalar imtheme.complex
+* Desinstalar IM responsivetheme
+* Remover del buildout / borrar de src-git
+* portal_view_customizations
+    * zope.interface.interface-plone.colophon
+    * zope.interface.interface-plone.footer
+* portal_skins
+    * facebook.png
+    * folder_congresos_view
+    * twitter.png
+* Collage
+    * Unidades
+    * Festivales
+    * Galeria
+* Theme
+    * Señalar enlaces especiales
+    * Mostrar iconos de tipo de contenido / Sólo para usuarios conectados
+* @@manage-viewlets
+    * hide lineage.switcher
+* Instalar imtheme.blue
+
 Installation
 ------------
 
