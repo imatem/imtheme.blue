@@ -27,6 +27,5 @@ class SliderViewlet(ViewletBase):
                 headers.append(data)
         return headers
 
-
     def render(self):
         return super(SliderViewlet, self).render()
