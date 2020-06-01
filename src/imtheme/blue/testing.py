@@ -8,6 +8,7 @@ from plone.app.testing import PloneSandboxLayer
 from plone.testing import z2
 
 import imtheme.blue
+import Products.Collage
 
 
 class ImthemeBlueLayer(PloneSandboxLayer):
@@ -21,9 +22,12 @@ class ImthemeBlueLayer(PloneSandboxLayer):
         # import plone.app.dexterity
         # self.loadZCML(package=plone.app.dexterity)
         self.loadZCML(package=imtheme.blue)
+        self.loadZCML(package=Products.Collage)
+        z2.installProduct(app, 'Products.Collage')
 
     def setUpPloneSite(self, portal):
         applyProfile(portal, 'imtheme.blue:default')
+        applyProfile(portal, 'Products.Collage:default')
 
 
 IMTHEME_BLUE_FIXTURE = ImthemeBlueLayer()

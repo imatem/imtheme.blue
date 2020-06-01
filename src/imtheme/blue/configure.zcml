@@ -48,6 +48,8 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
+  <include package=".viewlets" />
+
   <plone:static
       directory="theme"
       type="theme"

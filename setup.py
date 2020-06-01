@@ -47,6 +47,7 @@ setup(
     python_requires="==2.7",
     install_requires=[
         'setuptools',
+        'Products.Collage',
         # -*- Extra requirements: -*-
         # 'plone.app.themingplugins',
         # 'collective.themefragments',
