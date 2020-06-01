@@ -1,5 +1,5 @@
-<div class="slideshow-header-container">
-  <tal:block tal:repeat="header view/sliders">
+<div class="slideshow-header-container" tal:define="sliders view/sliders">
+  <tal:block tal:repeat="header sliders">
     <div class="mySlides fade">
       <a tal:attributes="href header/url">
         <img tal:attributes="src header/urlimage" style="width:100%"/>
@@ -8,7 +8,7 @@
   </tal:block>
 
   <div class="dots">
-    <tal:block tal:repeat="x python:range(1, len(headers)+1)">
+    <tal:block tal:repeat="x python:range(1, len(sliders)+1)">
       <span class="dot" tal:attributes="onclick string: currentSlide(${x})" style="cursor: pointer;"></span>
     </tal:block>
   </div>
