@@ -12,14 +12,18 @@
       />
 
   <!-- Publish static files -->
-  <!-- <plone:static
-      name="imtheme.blue"
-      type="plone"
-      directory="static"
-      /> -->
   <browser:resourceDirectory
       name="imtheme.blue"
       directory="static"
+      layer="imtheme.blue.interfaces.IImthemeBlueLayer"
+      />
+
+  <browser:page
+      name="sliderbox"
+      for="Products.ATContentTypes.content.topic.ATTopic"
+      class=".sliderboxtopicview.SliderBoxTopicView"
+      template="sliderboxtopicview.pt"
+      permission="zope2.View"
       layer="imtheme.blue.interfaces.IImthemeBlueLayer"
       />
 
