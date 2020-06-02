@@ -1,0 +1,81 @@
+.grid-container img {
+    width: 100%;
+}
+
+.grid-container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    column-gap: 25px;
+    row-gap: 60px;
+}
+
+.grid-container li {
+    list-style: none;
+    background-color: white;
+    padding: 13px;
+}
+
+.grid-container li a {
+      text-decoration: none;
+      border-bottom: 0;
+}
+
+.congress-title {
+    color: #2C4E78;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    margin-top: 11px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.congress-date {
+    color: #2C4E78;
+    font-family: arial;
+    font-size: 14px;
+}
+
+.congress-place {
+    color: #2C4E78;
+    font-family: arial;
+    font-size: 12px;
+}
+
+
+@media (min-width: 660px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.main-container-grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 280px);
+}
+
+.congress-image li {
+    list-style: none;
+    background-color: white;
+    padding: 13px;
+}
+
+.link-category {
+    background-color: #B4CBE5;
+}
+
+.documentFirstHeading {
+    font-size: 2em;
+    color: #2c4e78;
+}
+
+.documentDescription {
+    line-height: 30px;
+    color: grey;
+}
+
+
+.dl.portlet dt{
+    background-color: #B4CBE5;
+}
