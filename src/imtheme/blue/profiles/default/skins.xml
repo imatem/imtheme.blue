@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object name="portal_skins">
+  <object name="imtheme_blue_contact_info"
+    meta_type="Filesystem Directory View"
+    directory="imtheme.blue:skins/imtheme_blue_contact_info"
+    />
+  <skin-path name="*">
+    <layer name="imtheme_blue_contact_info"
+      insert-after="custom"/>
+  </skin-path>
+</object>

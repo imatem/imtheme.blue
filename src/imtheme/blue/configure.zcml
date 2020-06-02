@@ -42,11 +42,12 @@
 
   <include package=".viewlets" />
 
+  <include file="skins.zcml" />
+
   <plone:static
       directory="theme"
       type="theme"
       name="im-theme-blue"
       />
-
 
 </configure>
