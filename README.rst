@@ -49,8 +49,9 @@ Before Installation
 * Theme
     * Señalar enlaces especiales
     * Mostrar iconos de tipo de contenido / Sólo para usuarios conectados
-* @@manage-viewlets
-    * hide lineage.switcher
+* buildout
+    * agregar imtheme.blue
+    * actualizar matem.congresos a la rama themeblue
 * Instalar imtheme.blue
 
 Installation
