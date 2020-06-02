@@ -1,31 +1,199 @@
-<html lang="es">
+<!doctype html>
+<html lang="es" xmlns:xlink="http://www.w3.org/1999/xlink">
+
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="imblue.css">
+  <meta charset="utf-8">
+  <title>Instituto de Matemáticas, UNAM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Instituto de Matemáticas, UNAM">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2">
+  <link rel="stylesheet" href="less/imblue-compiled.css">
+  <link rel="stylesheet" href="less/imblue-events.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/menu.js"></script>
+  <!-- js already registered in plone -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/jquery.slicebox.min.js"></script>
+  <script src="js/imslider.js" defer="defer"></script>
 </head>
+
 <body>
+  <header id="main-header" class="main-header">
 
+    <div class="top-wrapper">
+      <div class="social-media container-xl">
+        <a href="http://localhost:8080/infomatem/servicios/correo-interno">
+          <img width="25" height="30" src="images/icons-svgs/envelope-regular.svg" alt="Correo Interno">
+          <samp class="correo-interno top-text-xl">Correo interno</samp>
+        </a>
+        <a href="https://www.youtube.com/channel/UC-_-zDEIsqM3h_jH14JzkTA"><img width="27" height="30" src="images/icons-svgs/youtube-brands.svg" alt="IM en Yotube"></a>
+        <a href="https://www.instagram.com/imate.unam/" target="_blank">
+          <img width="22" height="30" src="images/icons-svgs/instagram-brands.svg" alt="Instagram IM">
+        </a>
+        <a href="https://www.facebook.com/imateunam/" target="_blank">
+          <img width="23" height="30" src="images/icons-svgs/facebook-square-brands.svg" alt="Facebook IM">
+        </a>
+        <a href="https://twitter.com/imate_unam" target="_blank">
+          <img width="23" height="30" src="images/icons-svgs/twitter-square-brands.svg" alt="Twitter IM">
+        </a>
 
-    <div class="grid">
-        <div>Item One</div>
-        <div>Item Two</div>
-        <div>Item Three</div>
-        <div>Item Four</div>
+        <div class="session">
+          <img class="top-text-xl" width="25" src="images/icons-svgs/search-solid.svg" alt="búsqueda">
+          <samp class="top-text-xl entrar">Entrar</samp>
+          <img width="25" src="images/icons-svgs/sign-in-alt-solid.svg" alt="Login">
+        </div>
+      </div>
     </div>
 
-    <div class="grid">
-        <div>Item One</div>
-        <div>Item Two</div>
-        <div>Item Three</div>
-        <div>Item Four</div>
+    <nav id="navigation-wrapper"  class="navigation container-xl">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <ul id="portal-globalnav" class="supermenu">
+        <li><a href="about/">Acerca del IM</a></li>
+        <li><a href="">Investigación</a></li>
+        <li><a href="">Comunidad</a></li>
+        <li><a href="">Activides académicas</a></li>
+        <li><a href="">Seminarios</a></li>
+        <li></li>
+        <li><a href="">Bibliotecas</a></li>
+        <li><a href="">Servicios internos</a></li>
+        <li><a href="">Igualdad</a></li>
+      </ul>
+    </nav>
+
+    <div id="submenu-wrapper" class="container-xl">
+      <div class="submenu">
+        <a href="https://www.unam.mx/"><img class="logo-unam" src="images/unam-escudo-azul.png" alt="UNAM"></a>
+        <a href="https://www.matem.unam.mx/"><img class="logo-im" src="images/logo_imunam.png" alt="Instituto de Matemáticas"></a>
+      </div>
+      <div class="submenu-accions">
+        <ul>
+          <li>Contacto</li>
+        </ul>
+      </div>
     </div>
-      
+
+    <div id="slider-wrapper" class="container-xl">
+      <div class="mySlides fade" style="display: block;">
+        <a>
+          <img style="width:100%" src="images/imbanner.jpg">
+        </a>
+      </div>
+    </div>
+  </header>
 
 
+  <div id="main-container" class="container-xl">
+    <div class="unidades-h">
+      <img width="100"  src="images/Lineas-Unidades1.png" alt="Unidades">
+      <span>Unidades del Instituto de Matemáticas</span>
+      <img width="100" src="images/Lineas-Unidades2.png" alt="Unidades">
+    </div>
+    <div class="sedes-wrapper">
+      <div class="sede-img sede-cu">
+        <div class="sede-title">Ciudad Universitaria</div>
+        <div><a class="sede-calendar" href="https://www.matem.unam.mx/actividades/allactivitiesview">Calendario de actividades</a></div>
+      </div>
+      <div class="unidades-h2">
+        <span>Unidades del Instituto de Matemáticas</span>
+      </div>
+      <div class="sede-img sede-cuernavaca">
+        <div class="sede-title">Cuernavaca</div>
+        <div><a href="http://www.matcuer.unam.mx">SITIO WEB</a></div>
+        <div><a class="sede-calendar" href="http://www.matcuer.unam.mx/actividades/">Calendario de actividades</a></div>
+      </div>
+      <div class="sede-img sede-juriquilla">
+        <div class="sede-title">Juriquilla</div>
+        <div><a href="http://www.matem-juriquilla.unam.mx">SITIO WEB</a></div>
+        <div><a class="sede-calendar" href="https://www.matem.unam.mx/juriquilla/actividades">Calendario de actividades</a></div>
+      </div>
+      <div class="sede-img sede-oaxaca">
+        <div class="sede-title"> Oaxaca</div>
+        <div><a href="https://paginas.matem.unam.mx/oaxaca/">SITIO WEB</a></div>
+        <div><a class="sede-calendar" href="https://paginas.matem.unam.mx/oaxaca/actividades/">Calendario de actividades</a></div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <div class="column-logos">
+        <a href="https://paginas.matem.unam.mx/cmo/"><img src="images/Logo_CMO.png" alt="CMO"></a>
+        <a href="http://www.umi-lasol.matem.unam.mx/"><img src="images/LOGO_LASOL.png" alt="LASOL"></a>
+        <a href="http://www.matcuer.unam.mx/siembra/"><img src="images/siembra.png" alt="SIEMBRA"></a>
+        <a href="http://festivalmcc.matem.unam.mx/"><img src="images/Festival-Mat.png" alt="Festival"></a>
+        <a href="https://sites.google.com/view/profe2018/p%C3%A1gina-principal"><img src="images/Profe.png" alt="PROFE"></a>
+      </div>
+      <div class="column1-container">
+        <div id="rotatednews" class="standard-topic">
+          <h2>NOTICIAS</h2>
+          <ul id="rotated" class="line-separated">
+            <li class="lirotated">
+                <a href="https://www.matem.unam.mx/acerca-de/noticias/nueva-mesa-directiva-de-la-sociedad-matematica-mexicana" class="summary url">Junta directiva de la Sociedad Matemática Mexicana 2020-2022</a>
+            </li>
+            <li class="lirotated">
+                <a href="https://www.matem.unam.mx/acerca-de/noticias/siembra-proyecto-para-incursionar-en-las-matematicas" class="summary url">Siembra, proyecto para incursionar en las matemáticas</a>
+            </li>
+          </ul>
+          <a id="rotatedmore" href="#" style="float:right"><span class="triangle-right"></span> más noticias</a>
+        </div>
+
+        <div id="notices" class="standard-topic">
+          <div class="avisos"></div>
+          <h2>AVISOS</h2>
+          <h3 class="tileHeadline">
+            <a href="https://www.matem.unam.mx/acerca-de/avisos/paspa-2020" class="summary url">Programa de Apoyos para la Superación del Personal Académico (PASPA 2020)</a>
+          </h3>
+          <p class="tileBody">
+            <span class="description">Convocatoria PASPA 2020. Se informan las fechas para entrega de documentos en Secretaría Académica.</span>
+          </p>
+        </div>
+
+        <div id="exchanges" class="standard-topic">
+          <h2>INTERCAMBIO ACADÉMICO</h2>
+        </div>
+      </div>
+
+      <div class="content-container">
+        <h1>ESCUELAS Y TALLERES PARA ESTUDIANTES</h1>
+        <img src="images/botones/oferta.jpg">
+        <h1>DIVULGACIÓN</h1>
+        <div id="toblerone"></div>
+        <img src="images/botones/docencia.jpg">
+        <img src="images/botones/vinculacion.jpg">
+        <img src="images/botones/becas.jpg">
+      </div>
+
+      <div class="sevicios-container standard-topic">
+        <h2>SERVICIOS AL PÚBLICO</h2>
+        <ul>
+          <li><a href="">Becas de lugar en el IM</a></li>
+          <li><a href="">Biblioteca Sotero Prieto</a></li>
+          <li><a href="">Biblioteca Solomon Lefchetz Cuernavaca</a></li>
+          <li><a href="">Publicaciones/Papirhos</a></li>
+          <li><a href="">Comunicación</a></li>
+          <li><a href="">Prensa</a></li>
+          <li><a href="">Formatos autorización uso de imagen IMUNAM (foto, video)</a></li>
+          <li><a href="">Enlaces de interés</a></li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  <footer class="top-wrapper">
+    <div id="footer-container" class="container-xl">
+    <div class="empty"></div>
+      <div class="footer-action">
+        <ul id="portal-siteactions"><li>Mapa del sitio</li><li>Acerca de este sitio</li><li>Aviso de privacidad</li><li>Contacto</li></ul>
+      </div>
+      <div class="footer-center">
+        <ul><li>Instituto de Matemáticas</li><li>Universidad Nacional </li><li>Autónoma de México</li><li>Área de la Investigación Cientifica</li></ul>
+      </div>
+    <div class="footer-address">
+      <ul><li>Circuito exterior,</li><li>Ciudad Universitaria, 04510,</li><li>Mexico, CDMX</li><li class="footer-phone">Teléfonos:</li><li>(+52)(55) 5622 4520, 21, 22</li></ul>
+    </div>
+   </div>
+  </footer>
 </body>
+
 </html>
-
-
-
-  
-  
