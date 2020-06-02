@@ -24,7 +24,7 @@
       class=".sliderboxtopicview.SliderBoxTopicView"
       template="sliderboxtopicview.pt"
       permission="zope2.View"
-      layer="imtheme.blue.interfaces.IImthemeBlueLayer"
+      layer="Products.Collage.interfaces.ICollageBrowserLayer"
       />
 
 </configure>

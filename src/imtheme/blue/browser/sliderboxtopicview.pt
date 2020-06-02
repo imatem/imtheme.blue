@@ -1,13 +1,61 @@
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:metal="http://xml.zope.org/namespaces/metal"
-      xmlns:tal="http://xml.zope.org/namespaces/tal"
-      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      i18n:domain="imtheme.blue"
-      metal:use-macro="context/main_template/macros/master">
-<body>
-  <metal:block fill-slot="content-core">
-      <h2 i18n:translate="">Sample View</h2>
-      <p tal:content="view/msg">this gets replaced</p>
-  </metal:block>
-</body>
-</html>
+<tal:manager replace="structure provider:collage.ContentManager" />
+<div class="wrapper"
+    tal:define="topicContents view/getContents;">
+  <ul id="sb-slider" class="sb-slider">
+    <tal:block tal:repeat="item topicContents">
+      <tal:block tal:define="obj item/getObject">
+        <li tal:condition="python:view.hasImage(obj)" style="display: none;" >
+          <a target="_blank" tal:attributes="href python:obj.eventUrl;">
+            <img tal:attributes="src obj/image/absolute_url" alt="image"/>
+          </a>
+        </li>
+      </tal:block>
+    </tal:block>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  $('#sb-slider').slicebox();
+</script>
+<script type="text/javascript">
+  $(function() {
+    var Page = (function() {
+      var $navArrows = $( '#nav-arrows' ).hide(),
+        $shadow = $( '#shadow' ).hide(),
+        slicebox = $( '#sb-slider' ).slicebox( {
+          onReady : function() {
+            $navArrows.show();
+            $shadow.show();
+          },
+          orientation : 'v',
+          cuboidsRandom : false,
+          cuboidsCount: 1,
+          autoplay : true,
+          speed : 600,
+          interval: 5000,
+          colorHiddenSides : '#222',
+          //fallbackFadeSpeed : 300,
+          //easing : 'ease',
+        } ),
+
+        init = function() {
+          initEvents();
+
+        },
+        initEvents = function() {
+          // add navigation events
+          $navArrows.children( ':first' ).on( 'click', function() {
+            slicebox.next();
+            return false;
+          } );
+          $navArrows.children( ':last' ).on( 'click', function() {
+
+            slicebox.previous();
+            return false;
+          } );
+        };
+        return { init : init };
+    })();
+    Page.init();
+  });
+</script>

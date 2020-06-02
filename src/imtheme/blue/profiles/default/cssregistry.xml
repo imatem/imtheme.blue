@@ -6,4 +6,10 @@
     compression="safe"
     expression="context/@@plone/isPortalOrPortalDefaultPage"
     />
+  <stylesheet
+    id="++resource++imtheme.blue/css/slicebox.css"
+    cacheable="True"
+    compression="safe"
+    expression="context/@@plone/isPortalOrPortalDefaultPage"
+    />
 </object>

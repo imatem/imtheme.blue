@@ -9,4 +9,14 @@
     enabled="True"
     expression="context/@@plone/isPortalOrPortalDefaultPage"
     inline="True"/>
+
+  <javascript
+    id="++resource++imtheme.blue/js/jquery.slicebox.min.js"
+    authenticated="False"
+    cacheable="True"
+    compression="safe"
+    cookable="False"
+    enabled="True"
+    expression="context/@@plone/isPortalOrPortalDefaultPage"
+    inline="False"/>
 </object>
