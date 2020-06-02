@@ -16,5 +16,13 @@
      permission="zope2.View"
      />
 
+  <browser:viewlet
+     name="actions-viewlet"
+     manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+     layer="imtheme.blue.interfaces.IImthemeBlueLayer"
+     class=".actionsviewlet.ActionsViewlet"
+     template="actionsviewlet.pt"
+     permission="zope2.View"
+     />
 
 </configure>
