@@ -116,6 +116,11 @@ header {
     border-top: 0px;
 }
 
+#portal-globalnav ul li a.hasChildrens,
+#portal-globalnav ul li a.hasChildrens:hover{
+    background-image: url(++theme++im-theme-blue/images/ddm-pointer.png);
+    background-position: 98% 50%;
+}
 
 
 #submenu-wrapper {
