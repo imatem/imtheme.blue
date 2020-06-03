@@ -822,6 +822,6 @@ div.collection_im_without_summary div.documentByLine{
 #contentActionMenus,
 #contentActionMenus dl.actionMenu a,
 #contentActionMenus dl.actionMenu.activated dd {
-    background-color: rgb(47, 118, 140);
-    border-color: rgb(47, 118, 140);
+    background-color: #2b768d;
+    border-color: #2b768d;
 }
