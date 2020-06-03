@@ -31,6 +31,10 @@
     line-height: 22px;
 }
 
+.congress-title:hover {
+    color: #2c786e;;
+}
+
 .congress-date {
     color: #2C4E78;
     font-family: arial;
@@ -43,6 +47,9 @@
     font-size: 12px;
 }
 
+img {
+    max-width: 100%;
+}
 
 @media (min-width: 660px) {
     .grid-container{
@@ -70,12 +77,22 @@
     color: #2c4e78;
 }
 
-.documentDescription {
-    line-height: 30px;
-    color: grey;
+#content .documentDescription {
+    color: black;
+    font: inherit;
+    line-height: 1.8em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
+dl.portlet dt {
+    background-color: #B4CBE5;
+}
 
-.dl.portlet dt{
+dd.portletItem {
+    background-color: white;
+}
+
+#category a.link-category {
     background-color: #B4CBE5;
 }
