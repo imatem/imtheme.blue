@@ -96,3 +96,11 @@ dd.portletItem {
 #category a.link-category {
     background-color: #B4CBE5;
 }
+
+#content div.newsImageContainer {
+    width: 400px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    margin-right: 0;
+}
+
