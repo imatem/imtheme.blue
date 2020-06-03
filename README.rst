@@ -34,7 +34,6 @@ Before Installation
     * Desactivar Plone Theme: complex
 * Desinstalar imtheme.complex
 * Desinstalar IM responsivetheme
-* Remover del buildout / borrar de src-git
 * portal_view_customizations
     * zope.interface.interface-plone.colophon
     * zope.interface.interface-plone.footer
@@ -49,6 +48,7 @@ Before Installation
 * Theme
     * Señalar enlaces especiales
     * Mostrar iconos de tipo de contenido / Sólo para usuarios conectados
+* Remover del buildout / borrar de src-git
 * buildout
     * agregar imtheme.blue
     * actualizar matem.congresos a la rama themeblue
