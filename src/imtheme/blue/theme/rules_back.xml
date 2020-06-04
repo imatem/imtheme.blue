@@ -152,5 +152,19 @@
     <!-- Drop icons in footer -->
     <!-- <drop css:theme="#footer .icons" /> -->
 
+    <!-- xslt examples -->
+
+    <!-- copia clases del body -->
+    <!-- <before theme-children="/html/body" method="raw">
+      <xsl:attribute name="class">
+        <xsl:value-of select="/html/body/@class" />
+        <xsl:if css:test="#portal-column-content"> col-content</xsl:if>
+      </xsl:attribute>
+    </before> -->
+
+    <!-- Agrega clase a elemento -->
+    <!-- <xsl:template match="ul[@id='portal-globalnav']/li/@class[contains(., 'selected')]">
+        <xsl:attribute name="class"><xsl:value-of select="." /> current-menu-item</xsl:attribute>
+    </xsl:template> -->
   </rules>
 </rules>
