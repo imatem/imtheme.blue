@@ -40,6 +40,7 @@ Before Installation
 * portal_skins
     * facebook.png
     * folder_congresos_view
+    * main_template
     * twitter.png
 * Collage
     * Unidades
@@ -52,6 +53,8 @@ Before Installation
 * buildout
     * agregar imtheme.blue
     * actualizar matem.congresos a la rama themeblue
+
+* Cambiar en index.html http://localhost:8080/infomatem por https://www.matem.unam.mx
 * Instalar imtheme.blue
 
 Installation
