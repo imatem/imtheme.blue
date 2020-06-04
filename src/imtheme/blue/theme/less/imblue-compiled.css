@@ -441,6 +441,8 @@ footer {
         border-right: none;
     }
 
+    #portal-globalnav #portaltab-bibliotecas-level1.selected > a,
+    #portal-globalnav #portaltab-servicios-level1.selected > a,
     #portal-globalnav > li:nth-last-child(-n+3) a:hover {
         color: rgb(239, 246, 247);
         background-color: rgb(185, 36, 44);
