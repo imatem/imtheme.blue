@@ -42,6 +42,11 @@ Before Installation
     * folder_congresos_view
     * main_template
     * twitter.png
+    * ploneCustom.css
+        * h1, h2, h3, h4, h5, h6 {
+        * font-family:  'Open Sans Condensed', sans-serif;
+        * letter-spacing: normal;
+        * }
 * En Collage borrar:
     * Unidades
     * Festivales

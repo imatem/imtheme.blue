@@ -841,3 +841,21 @@ div.collection_im_without_summary div.documentByLine{
     background-color: #2b768d;
     border-color: #2b768d;
 }
+
+
+/* paginas */
+.documentFirstHeading{
+    color: #2C4E78;
+    font-size: 25px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: 0;
+    letter-spacing: normal;
+}
+
+#content h2,
+#content h3 {
+    font-size: 18px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: 0;
+    letter-spacing: normal;
+}
