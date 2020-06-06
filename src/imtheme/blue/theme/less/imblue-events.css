@@ -103,13 +103,11 @@ dd.portletItem {
 #content div.newsImageContainer.img-wider {
     width: 46%;
     margin-left: 25px;
-    /* margin-bottom: 25px; */
     margin-right: 0;
 }
 
 #content div.newsImageContainer.img-higher {
     width: 30%;
     margin-left: 25px;
-    margin-bottom: 25px;
     margin-right: 0;
 }
