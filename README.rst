@@ -34,15 +34,15 @@ Before Installation
     * Desactivar Plone Theme: complex
 * Desinstalar imtheme.complex
 * Desinstalar IM responsivetheme
-* portal_view_customizations
+* En portal_view_customizations borrar:
     * zope.interface.interface-plone.colophon
     * zope.interface.interface-plone.footer
-* portal_skins
+* En portal_skins borrar:
     * facebook.png
     * folder_congresos_view
     * main_template
     * twitter.png
-* Collage
+* En Collage borrar:
     * Unidades
     * Festivales
     * Galeria
@@ -52,10 +52,15 @@ Before Installation
 * Remover del buildout / borrar de src-git
 * buildout
     * agregar imtheme.blue
-    * actualizar matem.congresos a la rama themeblue
+    * actualizar matem.congresos a la rama themeblue (merge)
 
 * Cambiar en index.html http://localhost:8080/infomatem por https://www.matem.unam.mx
 * Instalar imtheme.blue
+* En cada folder de congresos poner vista congresosfolder_view (ojo 2012)
+* Quitar entrada NOTICIAS, Avisos, Visitantes de sección ACERCA DEL IM
+* BIBLIOTECAS falta colocar enlace a ambas bibliotecas en esta nueva entrada
+* En SERVICIOS INTERNOS quitar entrada de BIBLIOTECAS
+
 
 Installation
 ------------
