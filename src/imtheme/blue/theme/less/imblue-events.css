@@ -1,9 +1,33 @@
-.news-grid-container img,
-.grid-container img {
-    width: 100%;
+#content-core ul.news-grid-container li {
+    padding-top: 0;
+    display: grid;
+    grid-template-rows: 237px auto;
 }
 
-.news-grid-container,
+.news-image-layout {
+    overflow: hidden;
+}
+
+/* .news-grid-container li img{
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 382px;
+    min-height: 237px;
+    max-height: 237px;
+} */
+
+/* .grid-container img {
+    width: 100%;
+} */
+
+.news-grid-container{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 15px;
+}
+
 .grid-container {
     max-width: 1200px;
     display: grid;
@@ -111,3 +135,6 @@ dd.portletItem {
     margin-left: 25px;
     margin-right: 0;
 }
+
+
+
