@@ -6,8 +6,8 @@
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
     <!-- HOME -->
+    <theme href="index.html" css:if-content="#visual-portal-wrapper" />
     <rules css:if-content=".section-inicio">
-        <theme href="index.html" css:if-content=".section-inicio" />
         <!-- <replace css:theme-children=".session" css:content-children=".sesionimg" /> -->
         <replace css:theme-children="#portal-globalnav" css:content-children="#portal-globalnav" />
         <replace css:theme-children=".submenu-accions" css:content-children="#portal_actions" />
@@ -23,7 +23,6 @@
     </rules>
 
     <rules css:if-not-content=".section-inicio">
-        <theme href="index.html"/>
         <!-- CSS -->
         <after css:theme-children="head" css:content="head link" />
         <before css:theme-children="head" css:content="head style" />
@@ -37,5 +36,6 @@
         <drop css:theme="#slider-wrapper" />
         <replace css:theme-children="#main-container" css:content-children="#portal-columns" />
         <drop css:theme="footer" />
+        <!-- <replace css:theme-children="footer" css:content="#portal-footer" /> -->
     </rules>
 </rules>
