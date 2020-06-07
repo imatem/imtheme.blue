@@ -25,4 +25,13 @@
      permission="zope2.View"
      />
 
+  <browser:viewlet
+     name="search-viewlet"
+     manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+     layer="imtheme.blue.interfaces.IImthemeBlueLayer"
+     class=".searchviewlet.SearchViewlet"
+     template="searchviewlet.pt"
+     permission="zope2.View"
+     />
+
 </configure>
