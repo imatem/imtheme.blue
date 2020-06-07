@@ -7,6 +7,9 @@
 
     <!-- HOME -->
     <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+    <replace css:theme="#user-name" css:content="#personaltools-login" css:if-content="#personaltools-login"/>
+    <replace css:theme="#user-name" css:content="#user-name" css:if-content="#user-name"/>
+
     <rules css:if-content=".section-inicio">
         <!-- <replace css:theme-children=".session" css:content-children=".sesionimg" /> -->
         <replace css:theme-children="#portal-globalnav" css:content-children="#portal-globalnav" />
@@ -38,4 +41,5 @@
         <drop css:theme="footer" />
         <!-- <replace css:theme-children="footer" css:content="#portal-footer" /> -->
     </rules>
+
 </rules>
