@@ -34,6 +34,8 @@
         <replace css:theme="#notices" css:content=".news_imstandard" method="raw" />
         <!-- intercambio -->
         <replace css:theme="#exchanges" css:content=".collection_im_without_summary" method="raw" />
+        <!-- Servicios internos -->
+        <replace css:theme=".sevicios-container" css:content=".sevicios-container" method="raw" />
     </rules>
 
     <rules css:if-not-content=".section-inicio">

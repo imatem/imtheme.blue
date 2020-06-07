@@ -51,6 +51,21 @@ Before Installation
     * Unidades
     * Festivales
     * Galeria
+* En Collage crear página con:
+        sevicios-container
+        <div class="sevicios-container standard-topic">
+            <h2>SERVICIOS AL PÚBLICO</h2>
+            <ul>
+                <li><a class="internal-link" href="resolveuid/f10548cc791cd1e2c053bc871ee3ac01" target="_self" title="">Becas de lugar en el IM</a></li>
+                <li><a class="external-link" href="http://biblioteca.matem.unam.mx/" target="_self" title="">Biblioteca Sotero Prieto</a></li>
+                <li><a class="external-link" href="http://im-c.bibliotecas.unam.mx/" target="_self" title="">Biblioteca Solomon Lefchetz Cuernavaca</a></li>
+                <li><a class="external-link" href="http://papirhos.matem.unam.mx/" target="_self" title="">Publicaciones/Papirhos</a></li>
+                <li><a class="internal-link" href="resolveuid/07ea4b7915a4bf3365d53e2b75c312a5" target="_self" title="">Comunicación</a></li>
+                <li><a>Prensa</a></li>
+                <li><a>Formatos autorización uso de imagen IMUNAM (foto, video)</a></li>
+                <li><a class="internal-link" href="resolveuid/93d8b350d3210b1d59e5c701ba3b96f3" target="_self" title="">Enlaces de interés</a></li>
+            </ul>
+        </div>
 * Theme
     * Señalar enlaces especiales
     * Mostrar iconos de tipo de contenido / Sólo para usuarios conectados
@@ -65,7 +80,10 @@ Before Installation
 * Quitar entrada NOTICIAS, Avisos, Visitantes de sección ACERCA DEL IM
 * BIBLIOTECAS falta colocar enlace a ambas bibliotecas en esta nueva entrada
 * En SERVICIOS INTERNOS quitar entrada de BIBLIOTECAS
-
+* Sección de Seminarios mover de Actividades
+* Revisar links de la principal
+* Dentro de sección ORGANIZACIÓN INTERNA hay que agregar sección de DIRECTORIO antes de ORGANIGRAMA
+* Dentro de sección ORGANIZACIÓN INTERNA / COMISIONES, no te envía a COMISIONES sino que te regresa a la entrada de Organización Interna: deben aparecer los enlaces de Comisión Dictaminadora, Comisión Evaluadora, Comisiones Académicas
 
 Installation
 ------------
