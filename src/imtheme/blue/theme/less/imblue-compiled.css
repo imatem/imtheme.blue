@@ -868,3 +868,7 @@ div.collection_im_without_summary div.documentByLine{
     margin-bottom: 0;
     letter-spacing: normal;
 }
+
+#user-name {
+    color: #2c4e78;
+}
