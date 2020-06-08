@@ -49,9 +49,6 @@
         <!-- roler -->
         <drop css:theme="#slider-wrapper" />
         <replace css:theme-children="#main-container" css:content-children="#portal-columns" />
-        <!-- footer -->
-        <drop css:theme="footer" />
-        <!-- <replace css:theme-children="footer" css:content="#portal-footer" /> -->
         <!-- drop the theme duplicate jsavascript -->
         <drop css:theme="#imslider" />
         <drop css:theme="#slicebox" />

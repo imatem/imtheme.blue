@@ -371,6 +371,7 @@ footer {
 
 #footer-container ul li{
     font-size:  12px;
+    display: inherit;
 }
 
 .footer-action ul li {
