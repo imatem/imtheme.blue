@@ -69,6 +69,7 @@ header {
     padding: 0px;
     margin: 0px;
     background-color: inherit;
+    display: grid;
 }
 
 #portal-globalnav li a {
@@ -124,6 +125,9 @@ header {
     background-position: 98% 50%;
 }
 
+#portal-globalnav li:hover > ul {
+    display: none;
+}
 
 #submenu-wrapper {
     display: grid;
@@ -463,6 +467,10 @@ footer {
     #portal-globalnav > li:nth-last-child(-n+3) ul li a.hasChildrens:hover{
         background-image: url(++theme++im-theme-blue/images/ddm-pointer-red.png);
         background-position: 98% 50%;
+    }
+
+    #portal-globalnav li:hover > ul {
+        display: block;
     }
 
     .unidades-h2 {
