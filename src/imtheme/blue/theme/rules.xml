@@ -37,6 +37,11 @@
         <replace css:theme="#exchanges" css:content=".collection_im_without_summary" method="raw" />
         <!-- Servicios internos -->
         <replace css:theme=".sevicios-container" css:content=".sevicios-container" method="raw" />
+        <replace css:theme="#rotatedmore">
+          <a id="rotatedmore" href="{$portal_url}/acerca-de/noticias" style="float:right">
+            <span class="triangle-right"></span> más noticias
+          </a>
+        </replace>
     </rules>
 
     <rules css:if-not-content=".section-inicio">
