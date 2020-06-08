@@ -871,4 +871,11 @@ div.collection_im_without_summary div.documentByLine{
 
 #user-name {
     color: #2c4e78;
+    display: inline;
+}
+
+.top-text-xl.entrar {
+    display: inline;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
 }
