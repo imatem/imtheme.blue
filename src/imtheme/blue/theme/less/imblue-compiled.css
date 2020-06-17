@@ -390,9 +390,14 @@ footer {
     margin-bottom: 17px;
 }
 
-.footer-center ul li:first-child,
-.footer-center ul li:last-child {
+.footer-center ul{
     font-weight: bold;
+}
+
+.footer-center ul a,
+.footer-center ul a:visited{
+    text-decoration: none;
+    color: #2C4E78;
 }
 
 @media (min-width: 660px) {
