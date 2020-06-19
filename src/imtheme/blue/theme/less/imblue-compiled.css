@@ -768,7 +768,7 @@ div.collection_im_without_summary div.documentByLine{
 
 .content-container {
     max-width: 490px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .content-container h1{
