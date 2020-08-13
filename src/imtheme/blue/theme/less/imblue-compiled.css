@@ -315,9 +315,9 @@ header {
 
 .column-logos {
     display: grid;
-    align-self: baseline;
-    margin-top: 20px;
     row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     text-align: center;
 }
 
@@ -425,6 +425,11 @@ footer {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+    .sede-img {
+        height: 156px;
+    }
+
+
     .navigation .fa {
         display: none;
     }
@@ -526,6 +531,12 @@ footer {
     }
 }
 
+@media (min-width: 915px) {
+    .sede-img {
+        height: 136px;
+    }
+}
+
 @media (min-width: 1200px) {
     .container-xl {
         margin-right: auto;
@@ -561,11 +572,11 @@ footer {
 
     .column-logos {
         grid-area: c;
+        margin-top: 20px;
     }
 
     .column-logos img{
         width: 60%;
-        justify-self: center;
     }
 
     .sevicios-container {
