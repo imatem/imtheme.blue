@@ -425,6 +425,11 @@ footer {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+    .sede-img {
+        height: 156px;
+    }
+
+
     .navigation .fa {
         display: none;
     }
@@ -523,6 +528,12 @@ footer {
 
     .footer-center ul li:first-child {
         margin-bottom: 23px;
+    }
+}
+
+@media (min-width: 915px) {
+    .sede-img {
+        height: 136px;
     }
 }
 
