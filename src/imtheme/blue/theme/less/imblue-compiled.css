@@ -589,10 +589,6 @@ footer {
     .column1-container {
         grid-area: a;
     }
-
-    .news_imstandard {
-        padding-left: 10px;
-    }
 }
 
 /* Slicebox Style */
@@ -744,12 +740,6 @@ div.collection_im_without_summary div.documentByLine{
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.avisos{
-    height: 5px;
-    margin: 0px;
-    padding: 0px;
-}
-
 #rotatednews ul {
     list-style: none;
     padding-left: 10px;
@@ -765,16 +755,6 @@ div.collection_im_without_summary div.documentByLine{
     border-left: 0px;
     border-right: 0px;
     border-color: rgba(180, 203, 229, 0.3);
-}
-
-#notices h3 a{
-    text-decoration: none;
-    color: #2C4E78;
-    font-size: 17px;
-}
-
-#notices {
-    padding-left: 10px;
 }
 
 .content-container {
@@ -827,6 +807,7 @@ div.collection_im_without_summary div.documentByLine{
 
 .news_imstandard {
     padding-top: 10px;
+    padding-left: 0px;
 }
 
 .docencia {
@@ -853,7 +834,7 @@ div.collection_im_without_summary div.documentByLine{
 
 #rotatedmore {
     color: #2C4E78;
-    font-family: helvetica-arial;
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
 
@@ -901,4 +882,8 @@ div.collection_im_without_summary div.documentByLine{
     color: #2c4e78;
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
+}
+
+#title-ac307ba2f41b4e0c97eac5ec63df8af8 {
+    display: none;
 }

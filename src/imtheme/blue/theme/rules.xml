@@ -32,7 +32,7 @@
         <!-- noticias -->
         <replace css:theme="#rotated" css:content="#rotated" method="raw" />
         <!-- avisos -->
-        <replace css:theme="#notices" css:content=".news_imstandard" method="raw" />
+        <replace css:theme="#avisos-content" css:content-children=".news_imstandard" method="raw" />
         <!-- intercambio -->
         <replace css:theme="#exchanges" css:content=".collection_im_without_summary" method="raw" />
         <!-- Servicios internos -->
