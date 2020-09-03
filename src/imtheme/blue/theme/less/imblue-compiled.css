@@ -186,20 +186,20 @@ header {
 }
 
 .unidades-h2 {
-    display: grid;
+    display: none;
+    /* display: grid;
     place-items: center;
     color:  #2C4E78;
     font-size: 1em;
     text-align: center;
     border-right: 1px solid rgb(179,203,229);
-    border-bottom: 1px solid rgb(179,203,229);
-    /* background-color: white; */
+    border-bottom: 1px solid rgb(179,203,229); */
 }
 
 .sedes-wrapper,
 .sedes {
     display: grid;
-    grid-template-columns: 297px;
+    /* grid-template-columns: 297px; */
     grid-column-gap: 3px;
     column-gap: 3px;
     grid-row-gap: 3px;
@@ -208,7 +208,7 @@ header {
 }
 
 .sedes {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .sede-calendar{
@@ -225,13 +225,13 @@ header {
 
 .sede-img {
     color: white;
-    max-width: 297px;
     border-bottom: none;
     padding-bottom: 10px;
 }
 
 .sede-cu {
     background-color: #b6b4c4;
+    /* min-width: 297px; */
     /* border-bottom-style: solid; */
     /* border-bottom: 16px solid #b6b4c4; */
 }
@@ -432,10 +432,6 @@ footer {
 
     .sedes-wrapper {
         grid-template-columns: 1fr 3fr;
-    }
-
-    .sedes {
-        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .navigation .fa {
