@@ -21,7 +21,6 @@ header {
 
 /* Social media */
 .social-media,
-.sedes-wrapper,
 .navigation,
 .main-wrapper {
     margin-left: 10px;
@@ -187,12 +186,18 @@ header {
 }
 
 .unidades-h2 {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     color:  #2C4E78;
-    font-size: 15px;
+    font-size: 1em;
+    text-align: center;
+    border-right: 1px solid rgb(179,203,229);
+    border-bottom: 1px solid rgb(179,203,229);
+    /* background-color: white; */
 }
-.sedes-wrapper {
+
+.sedes-wrapper,
+.sedes {
     display: grid;
     grid-template-columns: 297px;
     grid-column-gap: 3px;
@@ -200,6 +205,10 @@ header {
     grid-row-gap: 3px;
     row-gap: 3px;
     justify-content: center;
+}
+
+.sedes {
+    grid-template-columns: 1fr 1fr;
 }
 
 .sede-calendar{
@@ -216,10 +225,9 @@ header {
 
 .sede-img {
     color: white;
-    height: 120px;
     max-width: 297px;
-    background-repeat: no-repeat;
     border-bottom: none;
+    padding-bottom: 10px;
 }
 
 .sede-cu {
@@ -423,11 +431,11 @@ footer {
     }
 
     .sedes-wrapper {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 3fr;
     }
 
-    .sede-img {
-        height: 143px;
+    .sedes {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .navigation .fa {
