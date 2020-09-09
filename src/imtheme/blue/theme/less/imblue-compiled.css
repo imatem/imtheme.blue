@@ -21,7 +21,6 @@ header {
 
 /* Social media */
 .social-media,
-.sedes-wrapper,
 .navigation,
 .main-wrapper {
     margin-left: 10px;
@@ -187,19 +186,29 @@ header {
 }
 
 .unidades-h2 {
-    display: flex;
-    justify-content: center;
+    display: none;
+    /* display: grid;
+    place-items: center;
     color:  #2C4E78;
-    font-size: 15px;
+    font-size: 1em;
+    text-align: center;
+    border-right: 1px solid rgb(179,203,229);
+    border-bottom: 1px solid rgb(179,203,229); */
 }
-.sedes-wrapper {
+
+.sedes-wrapper,
+.sedes {
     display: grid;
-    grid-template-columns: 297px;
+    /* grid-template-columns: 297px; */
     grid-column-gap: 3px;
     column-gap: 3px;
     grid-row-gap: 3px;
     row-gap: 3px;
     justify-content: center;
+}
+
+.sedes {
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .sede-calendar{
@@ -216,33 +225,33 @@ header {
 
 .sede-img {
     color: white;
-    height: 136px;
-    max-width: 297px;
-    background-repeat: no-repeat;
+    border-bottom: none;
+    padding-bottom: 10px;
 }
 
 .sede-cu {
     background-color: #b6b4c4;
-    border-bottom-style: solid;
-    border-bottom: 16px solid #b6b4c4;
+    /* min-width: 297px; */
+    /* border-bottom-style: solid; */
+    /* border-bottom: 16px solid #b6b4c4; */
 }
 
 .sede-cuernavaca {
     background-color: #724b59;
-    border-bottom-style: solid;
-    border-bottom: 16px solid #724b59;
+    /* border-bottom-style: solid; */
+    /* border-bottom: 16px solid #724b59; */
 }
 
 .sede-juriquilla {
     background-color: #1d90c2;
-    border-bottom-style: solid;
-    border-bottom: 16px solid #1d90c2;
+    /* border-bottom-style: solid; */
+    /* border-bottom: 16px solid #1d90c2; */
 }
 
 .sede-oaxaca {
     background-color: #cb8554;
-    border-bottom-style: solid;
-    border-bottom: 16px solid #cb8554;
+    /* border-bottom-style: solid; */
+    /* border-bottom: 16px solid #cb8554; */
 }
 
 .sede-title {
@@ -251,7 +260,7 @@ header {
 
 .sede-img > div {
     text-align: center;
-    padding-top: 18px;
+    padding-top: 10px;
 }
 
 .sede-img a:link, .sede-img a:visited  {
@@ -422,13 +431,8 @@ footer {
     }
 
     .sedes-wrapper {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 3fr;
     }
-
-    .sede-img {
-        height: 156px;
-    }
-
 
     .navigation .fa {
         display: none;
@@ -533,7 +537,7 @@ footer {
 
 @media (min-width: 915px) {
     .sede-img {
-        height: 136px;
+        height: 120px;
     }
 }
 
