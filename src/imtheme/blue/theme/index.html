@@ -126,78 +126,99 @@
       </div>
     </div>
 
-<!--  -->
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css'>
-
-<div id='container'>
-
-  <div class='widget-wrapper'>
-    <ul class="tab-wrapper">
-      <li id="morning" class="tab">tabmorning</li>
-      <li id="afternoon" class="tab">tabafternoon</li>
-      <li id="evening" class="tab">tabevening</li>
-    </ul>
-    <div class='new-widget'>
-      <div id='tabmorning' class="tab-content">
-
-      <table class="group-table">
-        <caption>Listado las actividades del día</caption>
-        <thead>
-          <tr>
-            <th>Hours / week</th>
-            <th>Class schedule</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>4</td>
-            <td>Tues & Thurs</td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- events -->
+  <section class="container-xl tabs-wrapper">
+    <section class="tabs-container">
+      <div tabindex="0">
+        <button>Hoy en el IM</button>
+        <p>Aparecen en un listado las actividades del día registradas por todas las unidades</p>
       </div>
-
-      <div id='tabafternoon' class="tab-content">
-      <table class="group-table">
-        <caption>Listado de toda la semana</caption>
-        <thead>
-          <tr>
-            <th>Hours / week</th>
-            <th>Class schedule</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>4</td>
-            <td>Tues & Thurs</td>
-          </tr>
-        </tbody>
-      </table>
+      <div tabindex="0">
+        <button>Actividades de la semana</button>
+        <p>Aparece el listado de toda la semana de todas las unidades</p>
       </div>
+      <div tabindex="0">
+        <button>Próximas actividades</button>
+        <p>Aparecen los carteles o banner registrados de todas las futuras actividades, no importando su lejanía</p>
+      </div>
+    </section>
+    <div class="tabs-container">
+      <button>Agenda IM</button>
+    </div>
+  </section>
 
-      <div id='tabevening' class="tab-content">
-      <table class="group-table">
-        <caption>Próximas actividades</caption>
-        <thead>
-          <tr>
-            <th>Hours / week</th>
-            <th>Class schedule</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>4</td>
-            <td>Tues & Thurs</td>
-          </tr>
-        </tbody>
-      </table>
+  <section class="tabs-wrapper">
+    <div class="tabs-container">
+        <button id="morning" class="tab">Hoy en el IM</button>
+        <button id="afternoon" class="tab">Actividades de la semana</button>
+        <button id="evening" class="tab">Próximas actividades</button>
+      <div class="new-widget">
+        <div id='tabmorning' class="tab-content">
+
+        <table class="group-table">
+          <caption>Listado las actividades del día</caption>
+          <thead>
+            <tr>
+              <th>Hours / week</th>
+              <th>Class schedule</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>4</td>
+              <td>Tues & Thurs</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+        <div id='tabafternoon' class="tab-content">
+        <table class="group-table">
+          <caption>Listado de toda la semana</caption>
+          <thead>
+            <tr>
+              <th>Hours / week</th>
+              <th>Class schedule</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>4</td>
+              <td>Tues & Thurs</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+        <div id='tabevening' class="tab-content">
+        <table class="group-table">
+          <caption>Próximas actividades</caption>
+          <thead>
+            <tr>
+              <th>Hours / week</th>
+              <th>Class schedule</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>4</td>
+              <td>Tues & Thurs</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
       </div>
     </div>
-  </div>
+    <div class="tabs-container">
+      <button>Agenda IM</button>
+    </div>
+  </section>
 
 
 
 <!--  -->
+  <div id='container'>
+
     <main class="main-wrapper">
       <div class="column-logos">
         <div>

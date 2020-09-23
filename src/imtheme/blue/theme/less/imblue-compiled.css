@@ -299,7 +299,6 @@ header {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    /*transition: background-color 0.6s ease;*/
     transition: background-color 0.6s ease;
 }
 
@@ -308,11 +307,10 @@ header {
 }
 
 .dots{
-    width: 950px;
-    margin-top: -20px;
+    margin-top: -30px;
     margin-right: auto;
     margin-bottom: auto;
-    margin-left: auto;
+    margin-left: 30px;
     opacity: 1;
 }
 
@@ -892,165 +890,70 @@ div.collection_im_without_summary div.documentByLine{
     display: none;
 }
 
+/* TABLE STYLING */
 
-/* Scheduling */
-
-
-/* * {
-    box-sizing: border-box;
-  } */
-
-  /* body{
-      background-color: #fff;
-      text-align: center;
-    font-family: 'Source Sans Pro', Helvetica;
-  } */
-
-  /* #container{
-      margin: 100px auto;
-      width: 90%;
-      text-align: left;
-    position: relative;
-  } */
-
-  /* .widget{
-      background-color: #fff;
-      font: 11pt Georgia,Times,serif;
-      color: #333;
-      padding: 7px;
-      width: 100%;
-
-  } */
-
-      /* .widget ul{
-          list-style-position: inside;
-      } */
-
-  /* .widget h5{
-      font-size: 14pt;
-      margin: 5px;
-  } */
-
-  /* .new-widget{
-      margin: 0px;
-      border: 1px solid #ddd;
-    border-top: 0;
-      background-color: #fff;
-      width: 100%;
-      clear: both;
-  } */
-
-  /* .new-widget ul{
-          display: none;
-      } */
-
-  /* .tab-wrapper{
-    width: 1000px;
-    padding: 0;
-  } */
-
-
-  /* .tab{
-    padding: 8px 10px;
-    margin-right: 5px;
-    font-size: 0.9em;
-      border-radius: 10px 10px 0 0;
-      float: left;
-      background: #eee;
-      text-transform: capitalize;
-      color: #333;
-      text-align: center;
-      cursor: pointer;
-      list-style: none!important;
-    transition: all 200ms;
-      border-top: 1px solid #ddd;
-      border-right: 1px solid #ddd;
-      border-left: 1px solid #ddd;
-
-
-  } */
-
-  /* .tab:hover {
-    background: #f0554a;
-    color: #fff;
-  } */
-
-  /* .active-tab{
-      background: #f0554a;
-    color: #fff;
-  } */
-
-  /* .active-tab:hover {
-
-
-  } */
-
-  /* .tab-content {
-    padding: 0 0;
-  } */
-
-  /* TABLE STYLING */
-
-  .group-table caption {
-      background:#f0554a;
+.group-table caption {
+    background:#f0554a;
     color: #fff;
     padding: 8px;
     font-size: 1.4em;
-  }
+}
 
-  .group-table {
-      border-top: 1px solid #ddd;
+.group-table {
+    border-top: 1px solid #ddd;
     width:100%;
-      border-collapse:collapse;
-          padding:5px;
-      text-align: center;
-      }
-      .group-table th {
-          padding: 10px 5px;
-      font-weight: normal;
-          background:#f0554a;
-      color: #fff;
-      }
-      .group-table td {
-          padding:10px 2px;
-      }
+    border-collapse:collapse;
+    padding:5px;
+    text-align: center;
+}
 
-  td:nth-child(3) {
-  }
-
-  .group-table th, .group-table td {
-    border-right: 1px solid #ddd;
-  }
-
-  .group-table th:last-child, .group-table td:last-child {
-    border-right: none;
-  }
-
-  .group-table tr:nth-child(odd) {
-    background: #f0f0f0;
-  }
-
-  #morning .group-table td:nth-child(3) {
-    background: #fff;
-  }
-
-  .group-table td.align-bottom {
-    vertical-align: bottom;
-    padding: 0;
-  }
-
-  .group-table td.align-top {
-    vertical-align: top;
-    padding: 0;
-  }
-
-  #morning .group-table td:nth-child(3), #afternoon .group-table td:nth-child(3), #evening .group-table td:nth-child(3) {
-    background: #fff;
-  }
-
-  #weekend .group-table td:nth-child(2) {
-    background: #fff;
-  }
-
+.group-table th {
+    padding: 10px 5px;
+    font-weight: normal;
+    background:#f0554a;
+    color: #fff;
+}
 
 /* end Scheduling */
+
+
+/* events */
+.tabs-wrapper{
+    display: grid;
+    gap: 1rem;
+    /* grid-template-columns: 75% 25%; */
+    /* justify-content: center; */
+}
+
+/* .tabs-wrapper {
+    grid-template-columns: 3fr 1fr;
+    margin: 15px 0;
+} */
+
+.tabs-container{
+    display: grid;
+    column-gap: 3px;
+    row-gap: 3px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.new-widget {
+    grid-column: 1 / 4;
+}
+
+.tabs-container > button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: rgba(180, 203, 229, 0.3);
+    color:#2C4E78;
+    transition: .25s ease;
+    border: none;
+    padding: 10px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .tabs-container > button.active-tab {
+    background-color: #B4CBE5;
+    outline: none;
+}
