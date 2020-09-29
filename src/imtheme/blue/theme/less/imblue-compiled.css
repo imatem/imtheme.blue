@@ -890,45 +890,13 @@ div.collection_im_without_summary div.documentByLine{
     display: none;
 }
 
-/* TABLE STYLING */
-
-.group-table caption {
-    background:#f0554a;
-    color: #fff;
-    padding: 8px;
-    font-size: 1.4em;
-}
-
-.group-table {
-    border-top: 1px solid #ddd;
-    width:100%;
-    border-collapse:collapse;
-    padding:5px;
-    text-align: center;
-}
-
-.group-table th {
-    padding: 10px 5px;
-    font-weight: normal;
-    background:#f0554a;
-    color: #fff;
-}
-
-/* end Scheduling */
-
-
 /* events */
 .tabs-wrapper{
     display: grid;
-    gap: 1rem;
-    /* grid-template-columns: 75% 25%; */
-    /* justify-content: center; */
-}
-
-/* .tabs-wrapper {
+    gap: 3px;
     grid-template-columns: 3fr 1fr;
-    margin: 15px 0;
-} */
+    margin-top: 15px;
+}
 
 .tabs-container{
     display: grid;
@@ -941,7 +909,7 @@ div.collection_im_without_summary div.documentByLine{
     grid-column: 1 / 4;
 }
 
-.tabs-container > button {
+.tab {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     cursor: pointer;
@@ -951,9 +919,42 @@ div.collection_im_without_summary div.documentByLine{
     border: none;
     padding: 10px;
     border-radius: 12px 12px 0 0;
-  }
+}
 
-  .tabs-container > button.active-tab {
+.tabs-container > button.active-tab {
     background-color: #B4CBE5;
     outline: none;
+}
+
+.tab-calendar {
+    display: grid;
+    row-gap: 3px;
+}
+
+.tab-calendar > button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    background-color: #B4CBE5;
+    color:#2C4E78;
+    border: none;
+    padding: 10px;
+    border-radius: 12px 12px 0 0;
+}
+
+.tab-content {
+    background:#B4CBE5;
+    color: :#2C4E78;
+    padding: 8px;
+    font-size: 16px;
+    /* text-align: center; */
+    display: block;
+    height: 285px;
+}
+
+.tab-content img{
+    height: 100%;
+}
+
+#tabevening {
+    text-align: center;
 }
