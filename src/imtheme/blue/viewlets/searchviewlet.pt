@@ -1,3 +1,48 @@
-<div class="days_to_conf">
-    SEARCH
+<div class="myserachbox"
+     i18n:domain="plone"
+     tal:define="navigation_root_url view/navigation_root_url;
+                 search_input_id view/search_input_id;">
+    <form id="searchGadget_form"
+          action="@@search"
+          tal:attributes="action string:${navigation_root_url}/@@search;
+                          id string:${search_input_id}_form;">
+        <div class="LSBox" style="display: flex;">
+
+          <div class="izquierdo">
+            <!-- id search_input_id -->
+            <input name="SearchableText"
+                   type="text"
+                   size="18"
+                   value=""
+                   title="Search Site"
+                   placeholder="Search Site"
+                   accesskey="4"
+                   i18n:attributes="title title_search_site;
+                                    placeholder title_search_site"
+                   tal:attributes="value request/form/SearchableText|nothing;
+                                   id string:'foo'"
+                   class="textextend" />
+
+            <div class="searchSection">
+                <input id="searchbox_currentfolder_only"
+                       class="noborder"
+                       type="checkbox"
+                       name="path"
+                       tal:attributes="value view/folder_path;
+                                       checked request/form/path|nothing"
+                       />
+                <label for="searchbox_currentfolder_only"
+                       i18n:translate="label_searchbox_currentfolder_only"
+                       style="cursor: pointer; font-weight: normal;color: #2c4e78;">
+                    only in current section
+                </label>
+            </div>
+          </div> <!-- end izquierdo -->
+
+          <div class="derecho">
+            <input type="image" src="images/icons-svgs/search-solid.svg" alt="Submit" width="25">
+          </div>
+        </div> <!-- end lsbox -->
+    </form>
+
 </div>

@@ -132,5 +132,10 @@ dd.portletItem {
     margin-right: 0;
 }
 
-
+.textextend{
+    width: 100% !important;
+    width: -moz-available !important;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available !important;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available !important;
+}
 
