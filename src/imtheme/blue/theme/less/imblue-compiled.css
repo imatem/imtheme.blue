@@ -953,6 +953,7 @@ div.collection_im_without_summary div.documentByLine{
     /* text-align: center; */
     display: block;
     height: 285px;
+    overflow: scroll;
 }
 
 .tab-content img{
@@ -965,4 +966,26 @@ div.collection_im_without_summary div.documentByLine{
 
 #galleria {
     text-align: center;
+}
+
+.tileItem {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+.summary a,
+.summary a:visited{
+    text-decoration: none;
+    color: #2C4E78;
+    font-weight: bold;
+}
+
+.summary a:hover {
+    color: #2c786e;
+}
+
+b span {
+    font-weight: initial;
+    font-size: 14px;
 }
