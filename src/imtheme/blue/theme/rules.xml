@@ -27,6 +27,11 @@
     <rules css:if-content=".section-inicio">
         <!-- roler -->
         <replace css:theme-children="#slider-wrapper" css:content-children=".slideshow-header-container" />
+        <replace css:theme="#hoy-en-el-im" css:content="#hoy-en-el-im" />
+        <replace css:theme="#actividades-de-la-semana" css:content="#actividades-de-la-semana" />
+
+        <replace css:theme-children="#galleria" css:content-children="#galleria" />
+
         <!-- toblerone -->
         <replace css:theme="#toblerone" css:content="#sb-slider" method="raw" />
         <!-- noticias -->
