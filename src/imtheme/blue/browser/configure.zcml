@@ -27,4 +27,23 @@
       layer="Products.Collage.interfaces.ICollageBrowserLayer"
       />
 
+  <!-- Collage views -->
+  <browser:page
+      name="im_topics_blue"
+      for="Products.ATContentTypes.content.topic.ATTopic"
+      permission="zope.Public"
+      template="im_collage_topics.pt"
+      class=".views_collage.IMTopicsView"
+      layer="Products.Collage.interfaces.ICollageBrowserLayer"
+      />
+
+  <browser:page
+      name="im_gallery_blue"
+      for="collective.plonetruegallery.interfaces.IGallery"
+      permission="zope.Public"
+      template="im_collage_gallery.pt"
+      class=".views_collage.IMGalleryView"
+      layer="Products.Collage.interfaces.ICollageBrowserLayer"
+      />
+
 </configure>
