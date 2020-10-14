@@ -226,41 +226,33 @@ header {
 .sede-img {
     color: white;
     border-bottom: none;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .sede-cu {
     background-color: #b6b4c4;
     /* min-width: 297px; */
-    /* border-bottom-style: solid; */
-    /* border-bottom: 16px solid #b6b4c4; */
 }
 
 .sede-cuernavaca {
     background-color: #724b59;
-    /* border-bottom-style: solid; */
-    /* border-bottom: 16px solid #724b59; */
 }
 
 .sede-juriquilla {
     background-color: #1d90c2;
-    /* border-bottom-style: solid; */
-    /* border-bottom: 16px solid #1d90c2; */
 }
 
 .sede-oaxaca {
     background-color: #cb8554;
-    /* border-bottom-style: solid; */
-    /* border-bottom: 16px solid #cb8554; */
 }
 
 .sede-title {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .sede-img > div {
     text-align: center;
-    padding-top: 10px;
 }
 
 .sede-img a:link, .sede-img a:visited  {
@@ -539,7 +531,11 @@ footer {
 
 @media (min-width: 915px) {
     .sede-img {
-        height: 120px;
+        padding-top: 10px;
+        height: 90px;
+    }
+    .sede-title {
+        font-size: 1.5em;
     }
 }
 
