@@ -1,25 +1,28 @@
 <tal:manager replace="structure provider:collage.ContentManager" />
-
 <tal:gallery tal:define="macros nocall:context/@@collective.plonetruegallery.macros;
                          displayer nocall:view/displayer;">
-    <tal:replace tal:replace="structure displayer/css" />
-    <style type="text/css">
-      .galleria-info{
-        width: 20%;
-      }
-      .galleria-info-text{
-        background-color: transparent;
-      }
-      .galleria-info-title{
-        color: transparent;
-      }
-      .galleria-info-close{
-        opacity: 0;
-      }
-      .galleria-container img{
-        margin-right: 25%;
-      }
-    </style>
-    <tal:replace tal:replace="structure displayer/javascript" />
-    <p metal:use-macro="macros/main|macros/content-core" />
+    <!-- <tal:replace tal:replace="structure displayer/css" /> -->
+    <!-- <tal:replace tal:replace="structure displayer/javascript" /> -->
+    <!-- <p metal:use-macro="macros/main|macros/content-core" /> -->
+
+    <div class="noimages" tal:condition="python: view.adapter.number_of_images == 0">
+      <p class="discreet" i18n:translate="label_no_images_in_gallery">
+        There are no images in this galleryyyyyy.
+      </p>
+    </div>
+
+<!-- <tal:display tal:condition="python: view.adapter.number_of_images > 0" tal:content="structure view/displayer/content" /> -->
+    <div id="galleria" class="galleria-container"
+        tal:condition="python: view.adapter.number_of_images > 0"
+        tal:define="theclass python:'galleria-container galleriatheme_' + view.settings.galleria_theme"
+        tal:attributes="class theclass" >
+        <tal:images tal:repeat="img view/adapter/cooked_images">
+            <a href="" tal:define="link python:view.link(img)"
+              tal:attributes="href link/href; target link/target">
+                <img title="Locomotives Roundhouse"
+                    tal:attributes="title img/title;
+                                    src img/original_image_url;"/>
+            </a>
+        </tal:images>
+    </div>
 </tal:gallery>

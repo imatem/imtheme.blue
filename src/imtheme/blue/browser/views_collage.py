@@ -31,4 +31,21 @@ class IMTopicsView(BaseTopicView):
 
 
 class IMGalleryView(GalleryView):
-    pass
+
+    def link(self, img):
+        """ Take link from description
+        """
+        description = img.get('description')
+        if description is None:
+            link = img.get('link')
+        try:
+            href_index = description.index('href="')
+            description = description[href_index + 6:]
+            href_index = description.index('">')
+            link = description[:href_index]
+        except ValueError as error:
+            link = img.get('link')
+        target = '_blank'
+        if 'www.matem.unam.mx' in link and '~' not in link:
+            target = ''
+        return {'href': link, 'target': target}
