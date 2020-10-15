@@ -14,7 +14,7 @@
     <tal:block  tal:condition="python:len(topicContents) == 0">
       <div id="hoy-en-el-im" class="collage_dl_item" >
         <dt>
-          <a class="collage_event_date">Sin actividades.</a>
+          <a class="collage_event_date">Sin actividades</a>
         </dt>
       </div>
     </tal:block>
