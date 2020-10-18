@@ -92,10 +92,6 @@ header {
     display: block;
 }
 
-#portal-globalnav  > li:nth-last-child(3){
-    margin-left: 2em;
-}
-
 #portal-globalnav ul li a.hasChildrens,
 #portal-globalnav ul li a,
 #portal-globalnav li.selected ul li a {
@@ -187,19 +183,11 @@ header {
 
 .unidades-h2 {
     display: none;
-    /* display: grid;
-    place-items: center;
-    color:  #2C4E78;
-    font-size: 1em;
-    text-align: center;
-    border-right: 1px solid rgb(179,203,229);
-    border-bottom: 1px solid rgb(179,203,229); */
 }
 
 .sedes-wrapper,
 .sedes {
     display: grid;
-    /* grid-template-columns: 297px; */
     grid-column-gap: 3px;
     column-gap: 3px;
     grid-row-gap: 3px;
@@ -232,7 +220,6 @@ header {
 
 .sede-cu {
     background-color: #b6b4c4;
-    /* min-width: 297px; */
 }
 
 .sede-cuernavaca {
@@ -527,6 +514,11 @@ footer {
     .footer-center ul li:first-child {
         margin-bottom: 23px;
     }
+
+    #portal-globalnav  > li:nth-last-child(3){
+        margin-left: 2em;
+    }
+
 }
 
 @media (min-width: 915px) {
@@ -534,8 +526,31 @@ footer {
         padding-top: 10px;
         height: 90px;
     }
+
     .sede-title {
         font-size: 1.5em;
+    }
+
+    #portal-globalnav  > li:nth-last-child(3){
+        margin-left: 0px;
+    }
+    .navigation {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+}
+
+@media (min-width: 1001px) {
+    .navigation {
+        margin-left: 98px;
+        margin-right: 98px;
+    }
+}
+
+@media (min-width: 1110px) {
+    .navigation {
+        margin-left: 150px;
+        margin-right: 150px;
     }
 }
 
@@ -591,6 +606,16 @@ footer {
     .column1-container {
         grid-area: a;
     }
+
+    .navigation {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #portal-globalnav  > li:nth-last-child(3){
+        margin-left: 2em;
+    }
+
 }
 
 /* Slicebox Style */
