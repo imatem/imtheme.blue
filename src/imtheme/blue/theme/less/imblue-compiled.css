@@ -1003,7 +1003,17 @@ div.collection_im_without_summary div.documentByLine{
     font-weight: bold;
     font-size: 16px;
 }
-.collage_event_title:hover {
+
+.collage_event_location,
+.collage_event_location:visited {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #2C4E78;
+    text-decoration: none;
+}
+
+
+.collage_event_title:hover,
+.collage_event_location:hover {
     color: #2c786e;
 }
 
@@ -1017,9 +1027,6 @@ div.collection_im_without_summary div.documentByLine{
     font-size: 15px;
 }
 
-.collage_event_location {
-    font-family: 'Open Sans Condensed', sans-serif;
-}
 
 .collage_event_type {
     font-weight: 600;

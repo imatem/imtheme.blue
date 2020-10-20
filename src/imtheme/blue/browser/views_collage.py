@@ -1,11 +1,18 @@
 # -*- coding: utf-8 -*-
 from collective.plonetruegallery.browser.views.galleryview import GalleryView
 from Products.Collage.browser.views import BaseTopicView
+from Products.validation import validation
 # from matem.event.browser.rss_view import IMRSSFeed
 from plone.app.portlets.portlets.rss import RSSFeed
 
 
 class IMTopicsView(BaseTopicView):
+
+    def isURL(self, loc):
+        v = validation.validatorFor('isURL')
+        if v(loc) is 1:
+            return True
+        return False
 
     def cstyle(self, ptitle):
         if 'Juriquilla' in ptitle:
