@@ -349,7 +349,7 @@ footer {
     column-gap: 10px;
 }
 
-.empty {
+#footer-container .empty {
     display: none;
 }
 
@@ -495,7 +495,7 @@ footer {
         column-gap: 20px;
     }
 
-    .empty {
+    #footer-container .empty {
         display: inline;
     }
 
