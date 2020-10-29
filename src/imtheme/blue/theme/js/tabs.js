@@ -20,7 +20,7 @@ $(document).ready(function(){
         carrusel_index = 1;
       }
       slides[carrusel_index-1].style.display = "unset";
-      setTimeout(showcarrusel, 8000); // Change image every x seconds
+      setTimeout(showcarrusel, 6000); // Change image every x seconds
     }
 
 });

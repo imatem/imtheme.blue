@@ -34,7 +34,7 @@ $(function() {
           $navArrows.show();
           $shadow.show();
         },
-        orientation : 'v',
+        orientation : 'h',
         cuboidsRandom : false,
         cuboidsCount: 1,
         autoplay : true,
