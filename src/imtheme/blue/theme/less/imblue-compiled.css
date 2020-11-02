@@ -18,6 +18,12 @@ header {
     margin-bottom: 16px;
 }
 
+.home-text-xl {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
 
 /* Social media */
 .social-media,
@@ -58,10 +64,15 @@ header {
 
 /* menu */
 .navigation .fa{
-    font-size: 32px;
     color: #2c4e78;
     display: inline-block;
 }
+
+/* .navigation .fa .text-menu{
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+} */
 
 #portal-globalnav {
     list-style-type: none;
@@ -199,10 +210,15 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.sede-website {
+    font-size: 14px;
+}
+
 .sede-calendar{
     background: url('../images/icons-svgs/calendar-alt-regular.svg');
     background-repeat: no-repeat;
     padding-left: 30px;
+    font-size: 14px;
 }
 
 .sede-calendar:hover{
@@ -386,6 +402,134 @@ footer {
     color: #2C4E78;
 }
 
+
+/* events */
+.tabs-wrapper{
+    display: grid;
+    gap: 3px;
+    /* grid-template-columns: 2fr 1fr 1fr; */
+    margin-top: 15px;
+}
+
+.tabs-container{
+    display: grid;
+    column-gap: 3px;
+    row-gap: 3px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.new-widget {
+    grid-column: 1 / 3;
+}
+
+.tab {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: rgba(180, 203, 229, 0.25);
+    color:#2C4E78;
+    transition: .25s ease;
+    border: none;
+    padding: 10px;
+    border-radius: 12px 12px 0 0;
+}
+
+.tabs-container > button.active-tab {
+    background-color:  rgba(180, 203, 229, 0.45);
+    outline: none;
+}
+
+.tab-calendar {
+    display: grid;
+    row-gap: 3px;
+}
+
+.tab-calendar > button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    background-color: rgba(180, 203, 229, 0.45);
+    color:#2C4E78;
+    border: none;
+    padding: 10px;
+    border-radius: 12px 12px 0 0;
+}
+
+.tab-content {
+    background: rgba(180, 203, 229, 0.45);
+    color: #2C4E78;
+    padding: 8px;
+    font-size: 16px;
+    /* text-align: center; */
+    display: block;
+    height: 285px;
+    overflow: scroll;
+}
+
+.tab-content img{
+    height: 100%;
+}
+
+#tabevening {
+    text-align: center;
+}
+
+#galleria {
+    text-align: center;
+}
+
+.collage_dl_item {
+    font-family: 'Open Sans', sans-serif;
+    color: #2C4E78;
+    margin-bottom: 15px;
+    /* border-bottom: dashed 1px; */
+}
+
+.collage_event_title,
+.collage_event_title:visited {
+    text-decoration: none;
+    color: #1d90c2;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.collage_event_location,
+.collage_event_location:visited {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #2C4E78;
+    text-decoration: none;
+}
+
+
+.collage_event_title:hover,
+.collage_event_location:hover {
+    color: #2c786e;
+}
+
+.collage_event_speaker,
+.collage_event_institution {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.collage_event_date {
+    font-size: 15px;
+}
+
+
+.collage_event_type {
+    font-weight: 600;
+}
+
+.collage_dl_item dt {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.collage_dl_item dd {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 @media (min-width: 660px) {
     .social-media img {
         margin-right: 5px;
@@ -399,9 +543,15 @@ footer {
     .submenu-accions ul{
         padding-left: 40px;
     }
+
 }
 
 @media (min-width: 768px) {
+
+    .home-text-xl {
+        margin-left: 15px;
+        margin-right: 10px;
+    }
 
     .logo-unam {
         padding-right: 15px;
@@ -517,6 +667,15 @@ footer {
 
     #portal-globalnav  > li:nth-last-child(3){
         margin-left: 2em;
+    }
+
+    #galleria {
+        display: grid;
+        place-items: center;
+    }
+
+    .tab-content img {
+        height: unset;
     }
 
 }
@@ -915,129 +1074,3 @@ div.collection_im_without_summary div.documentByLine{
     display: none;
 }
 
-/* events */
-.tabs-wrapper{
-    display: grid;
-    gap: 3px;
-    /* grid-template-columns: 2fr 1fr 1fr; */
-    margin-top: 15px;
-}
-
-.tabs-container{
-    display: grid;
-    column-gap: 3px;
-    row-gap: 3px;
-    grid-template-columns: 1fr 1fr;
-}
-
-.new-widget {
-    grid-column: 1 / 3;
-}
-
-.tab {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    cursor: pointer;
-    background-color: rgba(180, 203, 229, 0.25);
-    color:#2C4E78;
-    transition: .25s ease;
-    border: none;
-    padding: 10px;
-    border-radius: 12px 12px 0 0;
-}
-
-.tabs-container > button.active-tab {
-    background-color:  rgba(180, 203, 229, 0.45);
-    outline: none;
-}
-
-.tab-calendar {
-    display: grid;
-    row-gap: 3px;
-}
-
-.tab-calendar > button {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    background-color: rgba(180, 203, 229, 0.45);
-    color:#2C4E78;
-    border: none;
-    padding: 10px;
-    border-radius: 12px 12px 0 0;
-}
-
-.tab-content {
-    background: rgba(180, 203, 229, 0.45);
-    color: #2C4E78;
-    padding: 8px;
-    font-size: 16px;
-    /* text-align: center; */
-    display: block;
-    height: 285px;
-    overflow: scroll;
-}
-
-.tab-content img{
-    height: 100%;
-}
-
-#tabevening {
-    text-align: center;
-}
-
-#galleria {
-    text-align: center;
-}
-
-.collage_dl_item {
-    font-family: 'Open Sans', sans-serif;
-    color: #2C4E78;
-    margin-bottom: 15px;
-    /* border-bottom: dashed 1px; */
-}
-
-.collage_event_title,
-.collage_event_title:visited {
-    text-decoration: none;
-    color: #1d90c2;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.collage_event_location,
-.collage_event_location:visited {
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: #2C4E78;
-    text-decoration: none;
-}
-
-
-.collage_event_title:hover,
-.collage_event_location:hover {
-    color: #2c786e;
-}
-
-.collage_event_speaker,
-.collage_event_institution {
-    font-weight: 600;
-    font-size: 15px;
-}
-
-.collage_event_date {
-    font-size: 15px;
-}
-
-
-.collage_event_type {
-    font-weight: 600;
-}
-
-.collage_dl_item dt {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.collage_dl_item dd {
-    margin-left: 20px;
-    margin-right: 20px;
-}
