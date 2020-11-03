@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from DateTime import DateTime
 from collective.plonetruegallery.browser.views.galleryview import GalleryView
 from Products.Collage.browser.views import BaseTopicView
 from Products.validation import validation
@@ -13,6 +14,33 @@ class IMTopicsView(BaseTopicView):
         if v(loc) is 1:
             return True
         return False
+
+
+    def cuContents(self):
+        return self.getContents()
+
+    def ucContents(self):
+        foo = {
+            'getURL': 'http://localhost:8080/infomatem/seminarios/representaciones/actividades/tba-7',
+            'pretty_title_or_id': 'PRETTY',
+            'start': DateTime('2020/11/03 10:00:00 US/Central'),
+            'location': 'https://paginas.matem.unam.mx/ocas/',
+            'Subject': ('Seminario de Representaciones de \xc3\x81lgebras',),
+            'getSpeaker': u'Karin Baur',
+            'getEventInstitution': u'University of Graz & University of Leeds',
+            'isCanceled': False
+        }
+        return [foo]
+
+    def ujContents(self):
+        return []
+
+    def uoContents(self):
+        return []
+
+
+
+
 
     def cstyle(self, ptitle):
         if 'Juriquilla' in ptitle:
