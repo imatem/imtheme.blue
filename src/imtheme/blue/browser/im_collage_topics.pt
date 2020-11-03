@@ -3,7 +3,9 @@
                        toLocalizedTime nocall: plone_view/toLocalizedTime;
                        topic_title here/Title | nothing;
                        topic_style python:view.topicstyle(topic_title);
-                       topicContents view/ucContents;">
+                       semanaryview nocall: context/semanaryview;
+                       activities semanaryview/semanaryActivities;
+                       topicContents python:view.getActivities(activities)">
   <div tal:attributes="class topic_style">
 
     <tal:block  tal:condition="python:len(topicContents) == 0">

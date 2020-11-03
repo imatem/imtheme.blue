@@ -15,32 +15,51 @@ class IMTopicsView(BaseTopicView):
             return True
         return False
 
+    def getMinMax(self):
+        query = self.context.buildQuery()
+        end = query.get('end', {})
+        return end.get('query', (DateTime(),DateTime()))
 
     def cuContents(self):
         return self.getContents()
 
-    def ucContents(self):
-        foo = {
-            'getURL': 'http://localhost:8080/infomatem/seminarios/representaciones/actividades/tba-7',
-            'pretty_title_or_id': 'PRETTY',
-            'start': DateTime('2020/11/03 10:00:00 US/Central'),
-            'location': 'https://paginas.matem.unam.mx/ocas/',
-            'Subject': ('Seminario de Representaciones de \xc3\x81lgebras',),
-            'getSpeaker': u'Karin Baur',
-            'getEventInstitution': u'University of Graz & University of Leeds',
-            'isCanceled': False
-        }
-        return [foo]
+    def ujContents(self, activities):
+        minmax = self.getMinMax()
+        # TODO: ojo con actividades de mas de un dia
+        return [a for a in activities if minmax[0] < a.start and a.start < minmax[1]]
 
-    def ujContents(self):
+    def unidadContents(self, activities):
+        minmax = self.getMinMax()
+        uc = []
+        for act in activities:
+            start = act['updated']
+            if minmax[0] < start and start < minmax[1]:
+                uc.append({
+                    'getURL': act['url'],
+                    'pretty_title_or_id': act['title'],
+                    'start': start,
+                    'location': act['location'],
+                    'Subject': (act['seminarytitle'],),
+                    'getSpeaker': act['speaker'],
+                    'getEventInstitution': act['institution'],
+                    'isCanceled': False
+                })
+        return uc
+
+    def uoContents(self, activities):
         return []
 
-    def uoContents(self):
-        return []
-
-
-
-
+    def getActivities(self, activities):
+        """ see matem.event.browser.views.semanaryActivities
+        """
+        cu = [b for b in self.getContents()]
+        uj = self.ujContents(activities['brainsjur'])
+        cu.extend(uj)
+        uc = self.unidadContents(activities['matcuerrss'])
+        cu.extend(uc)
+        uo = self.unidadContents(activities['oaxrss'])
+        cu.extend(uo)
+        return sorted(cu, key = lambda i: i['start'])
 
     def cstyle(self, ptitle):
         if 'Juriquilla' in ptitle:
