@@ -1,15 +1,12 @@
 <tal:manager replace="structure provider:collage.ContentManager" />
 <tal:variables define="plone_view here/@@plone;
                        toLocalizedTime nocall: plone_view/toLocalizedTime;
-                       isAnon view/isAnon;
-                       mtool view/mtool;
-                       portal_url view/portal_url;
-                       normalizeString view/normalizeString;
-                       site_properties view/site_properties;
                        topic_title here/Title | nothing;
-                       topic_style python:view.topicstyle(topic_title);">
-  <div tal:attributes="class topic_style"
-       tal:define="topicContents view/getContents; ptitle here/Title | nothing;">
+                       topic_style python:view.topicstyle(topic_title);
+                       semanaryview nocall: context/semanaryview;
+                       activities semanaryview/semanaryActivities;
+                       topicContents python:view.getActivities(activities)">
+  <div tal:attributes="class topic_style">
 
     <tal:block  tal:condition="python:len(topicContents) == 0">
       <div id="hoy-en-el-im" class="collage_dl_item" >
@@ -19,72 +16,59 @@
       </div>
     </tal:block>
 
+    <tal:block tal:condition="python:topicContents">
+      <tal:listing i18n:domain="plone"
+                  define="month_name python:{'Jan.': 'enero', 'Feb.':'febrero', 'Mar.':'marzo', 'Apr.':'abril', 'May':'mayo', 'June':'junio', 'July':'julio', 'Aug.':'agosto', 'Sep.':'septiembre', 'Oct.':'octubre', 'Nov.':'noviembre', 'Dec.':'diciembre'};">
 
+        <tal:block tal:define="ptitle here/Title | nothing;
+            cstyle python:view.cstyle(ptitle);
+            homeurl python:view.topicHome(ptitle);">
+          <h3 style="width: 98%;" tal:attributes="class cstyle">
+              <tal:block tal:condition="homeurl">
+                <a href="" tal:attributes="href homeurl; class cstyle"><span tal:content="ptitle"/></a>
+              </tal:block>
+              <tal:block tal:condition="python:not homeurl">
+                <span tal:content="ptitle"/>
+              </tal:block>
+          </h3>
 
-
-    <tal:block tal:condition="python:topicContents or ptitle in ['Ciudad Universitaria', 'Juriquilla',]">
-
-    <tal:listing i18n:domain="plone"
-                 define="myview context/@@collage_kss_helper/getKssView;
-                         getKssClasses python: myview.getKssClasses;
-                         templateId string:folder_summary_view;
-                         month_name python:{'Jan.': 'enero', 'Feb.':'febrero', 'Mar.':'marzo', 'Apr.':'abril', 'May':'mayo', 'June':'junio', 'July':'julio', 'Aug.':'agosto', 'Sep.':'septiembre', 'Oct.':'octubre', 'Nov.':'noviembre', 'Dec.':'diciembre'};
-                         ">
-      <tal:block tal:define="ptitle here/Title | nothing;
-          cstyle python:view.cstyle(ptitle);
-          homeurl python:view.topicHome(ptitle);">
-        <br/>
-        <h3 style="width: 98%;" tal:attributes="class cstyle">
-          <font color="#FFFFFF">&nbsp;
-            <tal:block tal:condition="homeurl">
-              <a href="" tal:attributes="href homeurl; class cstyle"><span tal:content="ptitle"/></a>
-            </tal:block>
-
-            <tal:block tal:condition="python:not homeurl">
-              <span tal:content="ptitle"/>
-            </tal:block>
-
-          </font>  &nbsp;</h3>
-
-
-      <dl tal:attributes="id ptitle" tal:condition="topicContents" >
-        <tal:entry tal:repeat="item topicContents">
-          <div class="collage_dl_item">
-            <tal:block tal:define="item_url item/getURL|item/absolute_url;
-                                item_title_or_id item/pretty_title_or_id;
-                                item_date item/start/pCommon|nothing;
-                                item_location item/location|nothing;
-                                item_subjects item/Subject|None;
-                                item_seminary python: item_subjects and item_subjects[0] or None;
-                                item_expositor item/getSpeaker|nothing;
-                                item_institution item/getEventInstitution|nothing;
-                                item_isCanceled item/isCanceled|nothing;
-                                date_s python:item_date and item_date.split(' ') or '';
-                                fancy_date python:date_s and date_s[1].replace(',', '') +' de '+ month_name[date_s[0]] + ', ' +  date_s[3] + ' ' + date_s[4] + '.' or '';
-                                ">
-              <dt>
-                <a class="collage_event_title" href="#" tal:content="item_title_or_id" tal:attributes="href item_url" >Title</a>
-              </dt>
-              <dd>
-                <span class="collage_event_speaker" tal:condition="item_expositor" tal:content="item_expositor" />
-                <span class="collage_event_institution" tal:condition="item_institution" tal:content="python:' (' + item_institution + ').'" /><br/>
-                <span class="collage_event_date" tal:content="fancy_date"/><br/>
-                <tal:block tal:condition="python:view.isURL(item_location)">
-                  <a class="collage_event_location" target="_blank" tal:attributes="href item_location" tal:content="item_location"/><br/>
+          <dl tal:attributes="id ptitle" tal:condition="topicContents" >
+            <tal:entry tal:repeat="item topicContents">
+              <div class="collage_dl_item">
+                <tal:block tal:define="item_url item/getURL|item/absolute_url;
+                                    item_title_or_id item/pretty_title_or_id;
+                                    item_date item/start/pCommon|nothing;
+                                    item_location item/location|nothing;
+                                    item_subjects item/Subject|None;
+                                    item_seminary python: item_subjects and item_subjects[0] or None;
+                                    item_expositor item/getSpeaker|nothing;
+                                    item_institution item/getEventInstitution|nothing;
+                                    item_isCanceled item/isCanceled|nothing;
+                                    date_s python:item_date and item_date.split(' ') or '';
+                                    fancy_date python:date_s and date_s[1].replace(',', '') +' de '+ month_name[date_s[0]] + ', ' +  date_s[3] + ' ' + date_s[4] + '.' or '';
+                                    ">
+                  <dt>
+                    <a class="collage_event_title" href="#" tal:content="item_title_or_id" tal:attributes="href item_url" >Title</a>
+                  </dt>
+                  <dd>
+                    <span class="collage_event_speaker" tal:condition="item_expositor" tal:content="item_expositor" />
+                    <span class="collage_event_institution" tal:condition="item_institution" tal:content="python:' (' + item_institution + ').'" /><br/>
+                    <span class="collage_event_date" tal:content="fancy_date"/><br/>
+                    <tal:block tal:condition="python:view.isURL(item_location)">
+                      <a class="collage_event_location" target="_blank" tal:attributes="href item_location" tal:content="item_location"/><br/>
+                    </tal:block>
+                    <tal:block tal:condition="python:not view.isURL(item_location)">
+                      <span class="collage_event_location" tal:content="item_location"/><br/>
+                    </tal:block>
+                    <span class="collage_event_type" tal:content="item_seminary"/> <br/>
+                  </dd>
                 </tal:block>
-                <tal:block tal:condition="python:not view.isURL(item_location)">
-                  <span class="collage_event_location" tal:content="item_location"/><br/>
-                </tal:block>
-                <span class="collage_event_type" tal:content="item_seminary"/> <br/>
-              </dd>
-            </tal:block>
-          </div>
-        </tal:entry>
-      </dl>
-      </tal:block>
-    </tal:listing>
-  </tal:block>
+              </div>
+            </tal:entry>
+          </dl>
+        </tal:block>
 
+      </tal:listing>
+    </tal:block>
   </div>
-
 </tal:variables>
