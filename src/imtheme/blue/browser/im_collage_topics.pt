@@ -4,7 +4,7 @@
                        topic_title here/Title | nothing;
                        topic_style python:view.topicstyle(topic_title);
                        semanaryview nocall: context/semanaryview;
-                       activities semanaryview/semanaryActivities;
+                       activities semanaryview/tvActivities;
                        topicContents python:view.getActivities(activities)">
   <div tal:attributes="class topic_style">
 
