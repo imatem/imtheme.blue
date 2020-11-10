@@ -473,7 +473,8 @@ footer {
     text-align: center;
 }
 
-#galleria {
+#galleria,
+#agenda {
     text-align: center;
 }
 
@@ -669,7 +670,8 @@ footer {
         margin-left: 2em;
     }
 
-    #galleria {
+    #galleria,
+    #agenda {
         display: grid;
         place-items: center;
     }
@@ -1073,4 +1075,3 @@ div.collection_im_without_summary div.documentByLine{
 #title-ac307ba2f41b4e0c97eac5ec63df8af8 {
     display: none;
 }
-
