@@ -46,9 +46,6 @@ class IMTopicsView(BaseTopicView):
                 })
         return uc
 
-    def uoContents(self, activities):
-        return []
-
     def getActivities(self, activities):
         """ see matem.event.browser.views.semanaryActivities
         """
