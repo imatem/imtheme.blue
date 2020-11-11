@@ -37,16 +37,18 @@
               <div class="collage_dl_item">
                 <tal:block tal:define="item_url item/getURL|item/absolute_url;
                                     item_title_or_id item/pretty_title_or_id;
-                                    item_date item/start/pCommon|nothing;
+                                    item_date_mon item/start/pMonth|nothing;
+                                    item_date_day item/start/day|nothing;
+                                    item_date_time item/start/TimeMinutes|nothing;
                                     item_location item/location|nothing;
                                     item_subjects item/Subject|None;
                                     item_seminary python: item_subjects and item_subjects[0] or None;
                                     item_expositor item/getSpeaker|nothing;
                                     item_institution item/getEventInstitution|nothing;
                                     item_isCanceled item/isCanceled|nothing;
-                                    date_s python:item_date and item_date.split(' ') or '';
-                                    fancy_date python:date_s and date_s[1].replace(',', '') +' de '+ month_name[date_s[0]] + ', ' +  date_s[3] + ' ' + date_s[4] + '.' or '';
+                                    fancy_date python:item_date_mon and str(item_date_day) +' de '+ month_name[item_date_mon] + ', ' +  item_date_time + ' horas' or '';
                                     ">
+
                   <dt>
                     <a class="collage_event_title" href="#" tal:content="item_title_or_id" tal:attributes="href item_url" >Title</a>
                   </dt>
