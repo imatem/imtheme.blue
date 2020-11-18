@@ -58,20 +58,24 @@ class IMTopicsView(BaseTopicView):
         cu = [b for b in self.getContents()]
         uj = self.ujContents(activities['brainsjur'])
         cu.extend(uj)
-        uc = self.unidadContents(activities['matcuerrss'], 'sede-cuernavaca')
+        uc = self.unidadContents(activities['matcuerrss'], 'calendar-ucim')
         cu.extend(uc)
-        uo = self.unidadContents(activities['oaxrss'], 'sede-oaxaca')
+        uo = self.unidadContents(activities['oaxrss'], 'calendar-uoim')
         cu.extend(uo)
         return sorted(cu, key = lambda i: i['start'])
 
     def campus_class(self, item):
         cclass = item.get('campus', None)
-        if cclass is None:
-            if '/juriquilla/' in item.getURL():
-                cclass = 'sede-juriquilla'
-            else:
-                cclass = 'sede-cu'
-        return cclass
+        if cclass is not None:
+            return cclass
+        url = item.getURL()
+        if '/juriquilla/' in url:
+            return 'calendar-ujim'
+        if '/oaxaca/' in url:
+            return 'calendar-uoim'
+        if 'cuernavaca' in url:
+            return 'calendar-ucim'
+        return 'calendar-im'
 
 
 class IMGalleryView(GalleryView):

@@ -41,7 +41,7 @@
                                     fancy_date python:item_date_mon and str(item_date_day) +' de '+ month_name[item_date_mon] + ', ' +  item_date_time + ' horas' or '';
                                     ">
 
-                  <dt>
+                  <dt tal:attributes="class python:view.campus_class(item);">
                     <a class="collage_event_title" href="#" tal:content="item_title_or_id" tal:attributes="href item_url" >Title</a>
                   </dt>
                   <dd>

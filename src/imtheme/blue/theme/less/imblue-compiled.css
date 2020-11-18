@@ -531,6 +531,32 @@ footer {
     margin-right: 20px;
 }
 
+.calendar-im::before,
+.calendar-ucim::before,
+.calendar-uoim::before,
+.calendar-ujim::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c8"; /* Unicode bullet symbol */
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.calendar-im::before{
+    color: #b6b4c4;
+}
+
+.calendar-ucim::before{
+    color: #724b59;
+}
+
+.calendar-uoim::before{
+    color: #cb8554;
+}
+
+.calendar-ujim::before{
+    color: #1d90c2;
+}
+
 @media (min-width: 660px) {
     .social-media img {
         margin-right: 5px;
