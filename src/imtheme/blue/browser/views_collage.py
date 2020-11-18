@@ -69,18 +69,6 @@ class IMTopicsView(BaseTopicView):
                 cclass = 'sede-cu'
         return cclass
 
-    def topicHome(self, ptitle):
-        if 'Juriquilla' in ptitle:
-            if 'juriquilla' in self.request['ACTUAL_URL']:
-                # must be url activities
-                return 'http://www.matem.unam.mx/juriquilla'
-            else:
-                return 'http://www.matem.unam.mx/juriquilla/actividades'
-        if 'juriquilla' in self.request['ACTUAL_URL']:
-            return 'http://www.matem.unam.mx'
-        else:
-            return 'http://www.matem.unam.mx/actividades/allactivitiesview'
-
 
 class IMGalleryView(GalleryView):
 
