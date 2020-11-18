@@ -21,11 +21,10 @@
                   define="month_name python:{'Jan.': 'enero', 'Feb.':'febrero', 'Mar.':'marzo', 'Apr.':'abril', 'May':'mayo', 'June':'junio', 'July':'julio', 'Aug.':'agosto', 'Sep.':'septiembre', 'Oct.':'octubre', 'Nov.':'noviembre', 'Dec.':'diciembre'};">
 
         <tal:block tal:define="ptitle here/Title | nothing;
-            cstyle python:view.cstyle(ptitle);
             homeurl python:view.topicHome(ptitle);">
-          <h3 style="width: 98%;" tal:attributes="class cstyle">
+          <h3>
               <tal:block tal:condition="homeurl">
-                <a href="" tal:attributes="href homeurl; class cstyle"><span tal:content="ptitle"/></a>
+                <a href="" tal:attributes="href homeurl;"><span tal:content="ptitle"/></a>
               </tal:block>
               <tal:block tal:condition="python:not homeurl">
                 <span tal:content="ptitle"/>

@@ -28,7 +28,7 @@ class IMTopicsView(BaseTopicView):
         # TODO: ojo con actividades de mas de un dia
         return [a for a in activities if minmax[0] < a.start and a.start < minmax[1]]
 
-    def unidadContents(self, activities):
+    def unidadContents(self, activities, campuscode):
         minmax = self.getMinMax()
         uc = []
         for act in activities:
@@ -42,7 +42,8 @@ class IMTopicsView(BaseTopicView):
                     'Subject': (act['seminarytitle'],),
                     'getSpeaker': act['speaker'],
                     'getEventInstitution': act['institution'],
-                    'isCanceled': False
+                    'isCanceled': False,
+                    'campus': campuscode,
                 })
         return uc
 
@@ -52,16 +53,21 @@ class IMTopicsView(BaseTopicView):
         cu = [b for b in self.getContents()]
         uj = self.ujContents(activities['brainsjur'])
         cu.extend(uj)
-        uc = self.unidadContents(activities['matcuerrss'])
+        uc = self.unidadContents(activities['matcuerrss'], 'sede-cuernavaca')
         cu.extend(uc)
-        uo = self.unidadContents(activities['oaxrss'])
+        uo = self.unidadContents(activities['oaxrss'], 'sede-oaxaca')
         cu.extend(uo)
         return sorted(cu, key = lambda i: i['start'])
 
-    def cstyle(self, ptitle):
-        if 'Juriquilla' in ptitle:
-            return 'jurheader-color'
-        return 'cuheader-color'
+    def campus_class(self, item):
+        # import pdb; pdb.set_trace()
+        cclass = item.get('campus', None)
+        if cclass is None:
+            if '/juriquilla/' in item.getURL():
+                cclass = 'sede-juriquilla'
+            else:
+                cclass = 'sede-cu'
+        return cclass
 
     def topicstyle(self, ptitle):
         if 'Juriquilla' in ptitle:
