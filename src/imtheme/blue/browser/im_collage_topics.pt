@@ -51,10 +51,12 @@
                     <tal:block tal:condition="python:view.isURL(item_location)">
                       <a class="collage_event_location" target="_blank" tal:attributes="href item_location" tal:content="item_location"/><br/>
                     </tal:block>
-                    <tal:block tal:condition="python:not view.isURL(item_location)">
+                    <tal:block tal:condition="python:item_location and not view.isURL(item_location)">
                       <span class="collage_event_location" tal:content="item_location"/><br/>
                     </tal:block>
-                    <span class="collage_event_type" tal:content="item_seminary"/> <br/>
+                    <tal:block tal:condition="item_seminary">
+                      <span class="collage_event_type" tal:content="item_seminary"/> <br/>
+                    </tal:block>
                   </dd>
                 </tal:block>
               </div>

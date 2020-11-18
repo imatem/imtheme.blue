@@ -11,6 +11,11 @@ class IMTopicsView(BaseTopicView):
 
     def isURL(self, loc):
         v = validation.validatorFor('isURL')
+        if isinstance(loc, unicode):
+            try:
+                loc = loc.encode('utf-8')
+            except:
+                pass
         if v(loc) is 1:
             return True
         return False
@@ -60,7 +65,6 @@ class IMTopicsView(BaseTopicView):
         return sorted(cu, key = lambda i: i['start'])
 
     def campus_class(self, item):
-        # import pdb; pdb.set_trace()
         cclass = item.get('campus', None)
         if cclass is None:
             if '/juriquilla/' in item.getURL():
