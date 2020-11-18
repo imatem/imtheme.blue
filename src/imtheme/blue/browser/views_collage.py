@@ -69,11 +69,6 @@ class IMTopicsView(BaseTopicView):
                 cclass = 'sede-cu'
         return cclass
 
-    def topicstyle(self, ptitle):
-        if 'Juriquilla' in ptitle:
-            return 'jurborder-color'
-        return 'cuborder-color'
-
     def topicHome(self, ptitle):
         if 'Juriquilla' in ptitle:
             if 'juriquilla' in self.request['ACTUAL_URL']:

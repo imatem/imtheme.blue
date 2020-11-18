@@ -2,11 +2,10 @@
 <tal:variables define="plone_view here/@@plone;
                        toLocalizedTime nocall: plone_view/toLocalizedTime;
                        topic_title here/Title | nothing;
-                       topic_style python:view.topicstyle(topic_title);
                        semanaryview nocall: context/semanaryview;
                        activities semanaryview/tvActivities;
                        topicContents python:view.getActivities(activities)">
-  <div tal:attributes="class topic_style">
+  <div>
 
     <tal:block  tal:condition="python:len(topicContents) == 0">
       <div id="hoy-en-el-im" class="collage_dl_item" >
