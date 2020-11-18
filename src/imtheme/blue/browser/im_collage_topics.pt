@@ -3,7 +3,7 @@
                        toLocalizedTime nocall: plone_view/toLocalizedTime;
                        topic_title here/Title | nothing;
                        semanaryview nocall: context/semanaryview;
-                       activities semanaryview/tvActivities;
+                       activities semanaryview/weekActivities;
                        topicContents python:view.getActivities(activities)">
   <div>
 
