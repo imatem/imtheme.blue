@@ -63,16 +63,19 @@ header {
 }
 
 /* menu */
-.navigation .fa{
+.navigation .fa {
     color: #2c4e78;
     display: inline-block;
 }
 
-/* .navigation .fa .text-menu{
-    font-size: 1em;
+.navigation .fa::before {
+    font-size: 1.5em;
+}
+
+.navigation .text-menu {
+    font-size: 1.2em;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-} */
+}
 
 #portal-globalnav {
     list-style-type: none;
@@ -80,6 +83,7 @@ header {
     margin: 0px;
     background-color: inherit;
     display: grid;
+    text-align: center;
 }
 
 #portal-globalnav li a {
@@ -91,6 +95,7 @@ header {
     line-height: unset;
     background-color: inherit;
     margin-top: 0px;
+    padding: .5em 1em;
 }
 
 #portal-globalnav li.selected a,
@@ -600,6 +605,7 @@ footer {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        text-align: unset;
     }
 
     #portal-globalnav > li > a {
