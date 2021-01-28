@@ -240,19 +240,19 @@ header {
 }
 
 .sede-cu {
-    background-color: #b6b4c4;
+    background-color: #1D446D;
 }
 
 .sede-cuernavaca {
-    background-color: #724b59;
+    background-color: #468482;
 }
 
 .sede-juriquilla {
-    background-color: #1d90c2;
+    background-color: #5E9ACC;
 }
 
 .sede-oaxaca {
-    background-color: #cb8554;
+    background-color: #2E77CE;
 }
 
 .sede-title {
@@ -547,19 +547,19 @@ footer {
 }
 
 .calendar-im::before{
-    color: #b6b4c4;
+    color: #1d446D;
 }
 
 .calendar-ucim::before{
-    color: #724b59;
+    color: #468482;
 }
 
 .calendar-uoim::before{
-    color: #cb8554;
+    color: #5E9ACC;
 }
 
 .calendar-ujim::before{
-    color: #1d90c2;
+    color: #2E77CE;
 }
 
 @media (min-width: 660px) {
