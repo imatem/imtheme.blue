@@ -23,7 +23,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 6000); // Change image every x seconds
+  setTimeout(showSlides, 8000); // Change image every x seconds
 }
 
 /* For gigant  activities slider buttons*/
@@ -60,7 +60,7 @@ $(function() {
         cuboidsCount: 1,
         autoplay : true,
         speed : 600,
-        interval: 5000,
+        interval: 8000,
         colorHiddenSides : '#222',
         //fallbackFadeSpeed : 300,
         //easing : 'ease',
