@@ -142,13 +142,13 @@ header {
 
 #submenu-wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
 }
 
 /* Logos */
 .submenu {
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -162,8 +162,6 @@ header {
 }
 
 .submenu-accions {
-    margin-top: 25px;
-    margin-bottom: 25px;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -567,9 +565,22 @@ footer {
         margin-right: 5px;
     }
 
+    #submenu-wrapper {
+        grid-template-columns: 1fr 2fr;
+    }
+
     .submenu {
+        margin-top: 25px;
+        margin-bottom: 25px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .submenu-accions {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .submenu-accions ul{
