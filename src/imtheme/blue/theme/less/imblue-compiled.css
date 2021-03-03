@@ -320,12 +320,17 @@ header {
 
 .column-logos {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     row-gap: 10px;
     column-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
+.column-logos img{
+    width: 88%;
+}
 
 .sevicios-container ul {
     list-style: none;
@@ -355,7 +360,6 @@ header {
 
 /* footer */
 footer {
-    margin-top: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
@@ -789,15 +793,6 @@ footer {
             "a b d";
         column-gap: 50px;
         justify-content: center;
-    }
-
-    .column-logos {
-        grid-area: c;
-        margin-top: 20px;
-    }
-
-    .column-logos img{
-        width: 60%;
     }
 
     .sevicios-container {
