@@ -777,7 +777,7 @@ footer {
 
 /* Slicebox Style */
 .sb-slider {
-    margin: 0px auto 20px auto;
+    margin: 0px auto 0px auto;
     position: relative;
     overflow: hidden;
     width: 100%;
