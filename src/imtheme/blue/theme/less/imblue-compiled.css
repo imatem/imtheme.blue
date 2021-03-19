@@ -27,8 +27,7 @@ header {
 
 /* Social media */
 .social-media,
-.navigation,
-.main-wrapper {
+.navigation {
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -313,11 +312,6 @@ header {
 }
 
 /* Main */
-.main-wrapper {
-    display: grid;
-    margin-top: 30px;
-}
-
 .sevicios-container ul {
     list-style: none;
     padding-left: 5px;
@@ -770,34 +764,6 @@ footer {
         font-weight: bold;
     }
 
-    .main-wrapper {
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-areas:
-            "a b c"
-            "a b d"
-            "a b d"
-            "a b d"
-            "a b d"
-            "a b d";
-        column-gap: 40px;
-        justify-content: center;
-    }
-
-    .sevicios-container {
-        grid-area: d;
-    }
-
-    .content-container {
-        grid-area: b;
-    }
-    .column1-container {
-        grid-area: a;
-    }
-
-    .toblerone-container {
-        grid-area: c;
-    }
-
     .navigation {
         margin-left: auto;
         margin-right: auto;
@@ -815,7 +781,6 @@ footer {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 198px;
     list-style-type: none;
     padding: 0;
 }
@@ -1009,7 +974,8 @@ div.collection_im_without_summary div.documentByLine{
 
 .content-container img {
     width: 100%;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .tileHeadline {

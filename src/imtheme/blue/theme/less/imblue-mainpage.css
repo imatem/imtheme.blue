@@ -1,0 +1,41 @@
+/* Main */
+.main-wrapper {
+    display: grid;
+    margin-top: 30px;
+}
+
+
+.toblerone-container-img {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .main-wrapper {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "a b c"
+            "a b d"
+            "a b d"
+            "a b d"
+            "a b d"
+            "a b d";
+        column-gap: 40px;
+        justify-content: center;
+    }
+
+    .sevicios-container {
+        grid-area: d;
+    }
+
+    .content-container {
+        grid-area: b;
+    }
+    .column1-container {
+        grid-area: a;
+    }
+
+    .toblerone-container {
+        grid-area: c;
+    }
+
+}
