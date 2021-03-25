@@ -15,17 +15,21 @@
         grid-template-areas:
             "a b c"
             "a b d"
-            "a b d"
-            "a b d"
-            "a b d"
-            "a b d";
+            "a b e"
+            "a b e"
+            "a b e"
+            "a b e";
         column-gap: 40px;
         justify-content: center;
     }
 
     .sevicios-container {
-        grid-area: d;
+        grid-area: e;
         margin-top: 0px;
+    }
+
+    #exchanges {
+        grid-area: d;
     }
 
     .content-container {
