@@ -441,6 +441,12 @@ footer {
     border-radius: 12px 12px 0 0;
 }
 
+.tab-calendar > button > a,
+.tab-calendar > button > a:visited {
+    text-decoration: none;
+    color: #2C4E78;
+}
+
 .tab-content {
     background: rgba(180, 203, 229, 0.45);
     color: #2C4E78;
