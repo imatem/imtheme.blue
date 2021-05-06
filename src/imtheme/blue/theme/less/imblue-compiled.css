@@ -536,20 +536,21 @@ footer {
 }
 
 .calendar-im::before{
-    color: #1d446D;
+    color: #1D446D;
 }
 
 .calendar-ucim::before{
     color: #468482;
 }
 
-.calendar-uoim::before{
+.calendar-ujim::before{
     color: #5E9ACC;
 }
 
-.calendar-ujim::before{
+.calendar-uoim::before{
     color: #2E77CE;
 }
+
 
 @media (min-width: 660px) {
     .social-media img {
