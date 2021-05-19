@@ -60,7 +60,7 @@ $(function() {
         cuboidsCount: 1,
         autoplay : true,
         speed : 600,
-        interval: 8000,
+        interval: 5000,
         colorHiddenSides : '#222',
         //fallbackFadeSpeed : 300,
         //easing : 'ease',

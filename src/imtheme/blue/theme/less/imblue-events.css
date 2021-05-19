@@ -132,5 +132,12 @@ dd.portletItem {
     margin-right: 0;
 }
 
+.border_frontpage_published {
+    border: 1px solid;
+    border-color: #2b768d;
+}
 
-
+.border_private {
+    border: 1px solid;
+    border-color: red;
+}
