@@ -233,7 +233,6 @@ header {
     color: white;
     border-bottom: none;
     padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 .sede-cu {
@@ -718,7 +717,7 @@ footer {
 
 @media (min-width: 915px) {
     .sede-img {
-        padding-top: 10px;
+        padding-top: 5px;
         height: 90px;
     }
 
