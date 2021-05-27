@@ -618,7 +618,7 @@ footer {
         min-width: unset;
     }
 
-    #portal-globalnav > li:nth-last-child(4) a {
+    #portal-globalnav > li:nth-last-child(3) a {
         border-right: none;
     }
 
@@ -628,23 +628,23 @@ footer {
 
     #portal-globalnav #portaltab-bibliotecas-level1.selected > a,
     #portal-globalnav #portaltab-servicios-level1.selected > a,
-    #portal-globalnav > li:nth-last-child(-n+3):hover > a,
-    #portal-globalnav > li:nth-last-child(-n+3) a:hover {
+    #portal-globalnav > li:nth-last-child(-n+2):hover > a,
+    #portal-globalnav > li:nth-last-child(-n+2) a:hover {
         color: rgb(239, 246, 247);
         background-color: rgb(185, 36, 44);
     }
 
-    #portal-globalnav  > li:nth-last-child(-n+3) ul {
+    #portal-globalnav  > li:nth-last-child(-n+2) ul {
         border: 2px solid rgb(185, 36, 44);
     }
 
-    #portal-globalnav > li:nth-last-child(-n+3) ul li:hover > a {
+    #portal-globalnav > li:nth-last-child(-n+2) ul li:hover > a {
         color: #2c4e78;
         border-bottom: 4px solid rgb(185, 36, 44);
     }
 
-    #portal-globalnav > li:nth-last-child(-n+3) ul li a.hasChildrens,
-    #portal-globalnav > li:nth-last-child(-n+3) ul li a.hasChildrens:hover{
+    #portal-globalnav > li:nth-last-child(-n+2) ul li a.hasChildrens,
+    #portal-globalnav > li:nth-last-child(-n+2) ul li a.hasChildrens:hover{
         background-image: url(++theme++im-theme-blue/images/ddm-pointer-red.png);
         background-position: 98% 50%;
     }
@@ -700,7 +700,7 @@ footer {
         margin-bottom: 23px;
     }
 
-    #portal-globalnav  > li:nth-last-child(3){
+    #portal-globalnav  > li:nth-last-child(2){
         margin-left: 2em;
     }
 
@@ -725,7 +725,7 @@ footer {
         font-size: 1.3em;
     }
 
-    #portal-globalnav  > li:nth-last-child(3){
+    #portal-globalnav  > li:nth-last-child(2){
         margin-left: 0px;
     }
     .navigation {
@@ -775,7 +775,7 @@ footer {
         margin-right: auto;
     }
 
-    #portal-globalnav  > li:nth-last-child(3){
+    #portal-globalnav  > li:nth-last-child(2){
         margin-left: 2em;
     }
 
