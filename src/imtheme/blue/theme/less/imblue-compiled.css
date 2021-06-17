@@ -605,7 +605,6 @@ footer {
 
     #portal-globalnav {
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
         text-align: unset;
     }
@@ -776,7 +775,7 @@ footer {
     }
 
     #portal-globalnav  > li:nth-last-child(2){
-        margin-left: 2em;
+        margin-left: 1.5em;
     }
 
 }
