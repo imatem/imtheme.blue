@@ -1,5 +1,5 @@
 <tal:manager replace="structure provider:collage.ContentManager" />
-<div class="wrapper"
+<div id="wrapper-sb-slider"
     tal:define="topicContents view/getContents;">
   <ul id="sb-slider" class="sb-slider">
     <tal:block tal:repeat="item topicContents">
@@ -12,6 +12,12 @@
       </tal:block>
     </tal:block>
   </ul>
+
+<div id="nav-arrows" class="nav-arrows">
+  <a href="#" class="arrow right"></a>
+  <a href="#" class="arrow left"></a>
+</div>
+
 </div>
 
 <script type="text/javascript">

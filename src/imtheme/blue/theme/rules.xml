@@ -33,7 +33,7 @@
         <replace css:theme-children="#galleria" css:content-children="#galleria" />
 
         <!-- toblerone -->
-        <replace css:theme="#toblerone" css:content="#sb-slider" method="raw" />
+        <replace css:theme="#toblerone" css:content="#wrapper-sb-slider" method="raw" />
         <!-- noticias -->
         <replace css:theme="#rotated" css:content="#rotated" method="raw" />
         <!-- avisos -->

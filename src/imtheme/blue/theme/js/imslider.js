@@ -45,7 +45,6 @@ function showSlides2(n) {
 
 
 /* For tobleron */
-$('#sb-slider').slicebox();
 $(function() {
   var Page = (function() {
     var $navArrows = $( '#nav-arrows' ).hide(),
@@ -62,8 +61,7 @@ $(function() {
         speed : 600,
         interval: 5000,
         colorHiddenSides : '#222',
-        //fallbackFadeSpeed : 300,
-        //easing : 'ease',
+        reverse :false,
       } ),
 
       init = function() {
@@ -74,11 +72,14 @@ $(function() {
         // add navigation events
         $navArrows.children( ':first' ).on( 'click', function() {
           slicebox.next();
+          slicebox.play();
           return false;
         } );
         $navArrows.children( ':last' ).on( 'click', function() {
-
+          slicebox.options.reverse = true;
           slicebox.previous();
+          slicebox.options.reverse = false;
+          slicebox.play();
           return false;
         } );
       };
@@ -86,6 +87,7 @@ $(function() {
   })();
   Page.init();
 });
+$('#sb-slider').slicebox();
 
 
 /*For rotated news */
