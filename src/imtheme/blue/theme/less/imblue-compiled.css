@@ -212,10 +212,6 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.sede-website {
-    font-size: 14px;
-}
-
 .sede-calendar{
     background: url('../images/icons-svgs/calendar-alt-regular.svg');
     background-repeat: no-repeat;
@@ -717,7 +713,7 @@ footer {
 @media (min-width: 915px) {
     .sede-img {
         padding-top: 5px;
-        height: 90px;
+        height: 70px;
     }
 
     .sede-title {
