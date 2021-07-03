@@ -7,11 +7,9 @@
                        topicContents python:view.getActivities(activities)">
   <div>
 
-    <tal:block  tal:condition="python:len(topicContents) == 0">
-      <div id="hoy-en-el-im" class="collage_dl_item" >
-        <dt>
-          <a class="collage_event_date">Sin actividades</a>
-        </dt>
+    <tal:block tal:define="ptitle here/Title | nothing;" tal:condition="python:len(topicContents) == 0">
+      <div tal:attributes="id ptitle" class="galleria-container">
+          <img title="Periodo vacacional" src="++theme++im-theme-blue/images/banner_periodovacacional.jpg" />
       </div>
     </tal:block>
 
