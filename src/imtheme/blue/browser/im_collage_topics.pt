@@ -9,7 +9,8 @@
 
     <tal:block tal:define="ptitle here/Title | nothing;" tal:condition="python:len(topicContents) == 0">
       <div tal:attributes="id ptitle" class="galleria-container">
-          <img title="Periodo vacacional" src="++theme++im-theme-blue/images/banner_periodovacacional.jpg" />
+          <!-- <img title="Periodo vacacional" src="++theme++im-theme-blue/images/banner_periodovacacional.jpg" /> -->
+          Sin activities
       </div>
     </tal:block>
 
