@@ -26,8 +26,7 @@ header {
 
 
 /* Social media */
-.social-media,
-.navigation {
+.social-media{
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -613,7 +612,7 @@ footer {
         min-width: unset;
     }
 
-    #portal-globalnav > li:nth-last-child(3) a {
+    #portal-globalnav > li:nth-last-child(4) a {
         border-right: none;
     }
 
@@ -623,23 +622,23 @@ footer {
 
     #portal-globalnav #portaltab-bibliotecas-level1.selected > a,
     #portal-globalnav #portaltab-servicios-level1.selected > a,
-    #portal-globalnav > li:nth-last-child(-n+2):hover > a,
-    #portal-globalnav > li:nth-last-child(-n+2) a:hover {
+    #portal-globalnav > li:nth-last-child(-n+3):hover > a,
+    #portal-globalnav > li:nth-last-child(-n+3) a:hover {
         color: rgb(239, 246, 247);
         background-color: rgb(185, 36, 44);
     }
 
-    #portal-globalnav  > li:nth-last-child(-n+2) ul {
+    #portal-globalnav  > li:nth-last-child(-n+3) ul {
         border: 2px solid rgb(185, 36, 44);
     }
 
-    #portal-globalnav > li:nth-last-child(-n+2) ul li:hover > a {
+    #portal-globalnav > li:nth-last-child(-n+3) ul li:hover > a {
         color: #2c4e78;
         border-bottom: 4px solid rgb(185, 36, 44);
     }
 
-    #portal-globalnav > li:nth-last-child(-n+2) ul li a.hasChildrens,
-    #portal-globalnav > li:nth-last-child(-n+2) ul li a.hasChildrens:hover{
+    #portal-globalnav > li:nth-last-child(-n+3) ul li a.hasChildrens,
+    #portal-globalnav > li:nth-last-child(-n+3) ul li a.hasChildrens:hover{
         background-image: url(++theme++im-theme-blue/images/ddm-pointer-red.png);
         background-position: 98% 50%;
     }
@@ -695,10 +694,6 @@ footer {
         margin-bottom: 23px;
     }
 
-    #portal-globalnav  > li:nth-last-child(2){
-        margin-left: 2em;
-    }
-
     #galleria,
     #agenda {
         display: grid;
@@ -723,24 +718,18 @@ footer {
     #portal-globalnav  > li:nth-last-child(2){
         margin-left: 0px;
     }
-    .navigation {
-        margin-left: 45px;
-        margin-right: 45px;
-    }
-
 }
 
-@media (min-width: 1001px) {
-    .navigation {
-        margin-left: 98px;
-        margin-right: 98px;
+/* @media (min-width: 955px) {
+    #portal-globalnav  > li:nth-last-child(4){
+        margin-right: 550px;
     }
-}
 
-@media (min-width: 1110px) {
-    .navigation {
-        margin-left: 150px;
-        margin-right: 150px;
+} */
+
+@media (min-width: 1165px) {
+    #portal-globalnav  > li:nth-last-child(4){
+        margin-right: 0px;
     }
 }
 
@@ -770,7 +759,7 @@ footer {
         margin-right: auto;
     }
 
-    #portal-globalnav  > li:nth-last-child(2){
+    #portal-globalnav  > li:nth-last-child(3){
         margin-left: 1.5em;
     }
 
