@@ -581,6 +581,14 @@ footer {
 
 @media (min-width: 768px) {
 
+    form#searchGadget_form {
+        padding-top: 10px;
+    }
+
+    form#searchGadget_form > div.LSBox > div.izquierdo {
+        display: flex;
+    }
+
     .home-text-xl {
         margin-left: 15px;
         margin-right: 10px;
