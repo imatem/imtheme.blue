@@ -855,13 +855,13 @@ footer {
 
 /*For rotated news */
 #rotatednews{
-    height: 296px;
-    max-height: 296px;
+    height: 334px;
+    max-height: 334px;
 }
 
 ul.ulrotated {
     list-style-type: none;
-    height: 220px;
+    height: 256px;
     overflow-y: hidden;
     padding-inline-start: 0px;
     margin-block-start: 0px;
