@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="less/imblue-projects.css">
   <link rel="stylesheet" href="less/imblue-mainpage.css?rnd=132">
   <link rel="stylesheet" href="less/imblue-events.css">
+  <link rel="stylesheet" href="less/imblue-header.css">
+
 
   <!-- js already registered in plone -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -23,7 +25,7 @@
   <script id="slicebox"src="js/jquery.slicebox.min.js"></script>
   <script id="imslider" src="js/imslider.js" defer="defer"></script>
   <script src="js/menu.js"></script>
-  <script src="js/tabs.js"></script>
+  <script id="home_tabs" src="js/tabs.js"></script>
   <script src="https://kit.fontawesome.com/56d3fefca7.js" crossorigin="anonymous"></script>
 </head>
 
@@ -32,6 +34,9 @@
 
     <div class="top-wrapper">
       <div class="social-media container-xl">
+        <a href="https://www.unam.mx/" target="_blank"><img class="logo-unam" src="images/unam-escudo-azul.png" alt="UNAM"></a>
+        <a id="im-logo" href="#"><img class="logo-im" src="images/logo_imunam.png" alt="Instituto de Matemáticas"></a>
+
         <a href="http://localhost:8080/infomatem">
           <samp class="home-text-xl">INICIO</samp>
         </a>
@@ -56,8 +61,8 @@
           <!-- <a href="http://localhost:8080/infomatem/@@search"><img width="25" src="images/icons-svgs/search-solid.svg" alt="búsqueda"></a> -->
           <!-- <samp class="top-text-xl entrar"><a id="user-name" href="">Entrar</a></samp> -->
         <div class="session" style="display: -webkit-box;">
-          <div id=mysearchbox-wrapper style="padding-right: 1em;"></div>
-          <samp class="top-text-xl entrar"><a id="user-name" href="" style="padding-right: 1em;">Entrar</a></samp>
+          <!-- <div id=mysearchbox-wrapper style="padding-right: 1em;"></div> -->
+          <!-- <samp class="top-text-xl entrar"><a id="user-name" href="" style="padding-right: 1em;">Entrar</a></samp> -->
           <img width="25" src="images/icons-svgs/sign-in-alt-solid.svg" alt="Login">
         </div>
       </div>
@@ -80,30 +85,31 @@
       </ul>
     </nav>
 
-    <div id="submenu-wrapper" class="container-xl">
-      <div class="submenu">
-        <a href="https://www.unam.mx/" target="_blank"><img class="logo-unam" src="images/unam-escudo-azul.png" alt="UNAM"></a>
-        <a id="im-logo" href="#"><img class="logo-im" src="images/logo_imunam.png" alt="Instituto de Matemáticas"></a>
-      </div>
-      <div class="submenu-accions">
-        <ul>
-          <li>Contacto</li>
-        </ul>
+    <div class="acctions-wrapper">
+      <div id="submenu-wrapper" class="container-xl">
+        <div class="submenu-accions">
+          <ul>
+            <li>Contacto</li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div id="slider-wrapper" class="container-xl">
-      <div class="mySlides fade" style="display: block;">
-        <a>
-          <img style="width:100%" src="images/imbanner.jpg">
-        </a>
-      </div>
-    </div>
+
   </header>
 
 
   <div id="main-container" class="container-xl">
     <div id="main-container-wrapper">
+
+      <div id="slider-wrapper" class="container-xl">
+        <div class="mySlides fade" style="display: block;">
+          <a>
+            <img style="width:100%" src="images/imbanner.jpg">
+          </a>
+        </div>
+      </div>
+
       <div class="sedes-wrapper">
         <div class="sede-img sede-cu">
           <div class="sede-title">Ciudad Universitaria</div>
