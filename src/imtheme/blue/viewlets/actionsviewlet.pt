@@ -19,6 +19,6 @@
   </ul>
 
   <ul class="globallinks ">
-    <li><a tal:attributes="href string:${context/portal_url}/acerca-de/estructura-interna/secretaria-academica/informes/anuales">Informes anuales</a></li>
+    <li><a tal:attributes="href string:${context/portal_url}/acerca-de/estructura-interna/secretaria-academica/informes/anuales">Informes institucionales</a></li>
   </ul>
 </div>
