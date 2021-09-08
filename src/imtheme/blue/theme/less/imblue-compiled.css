@@ -5,17 +5,8 @@ body {
     padding: 0;
 }
 
-.top-wrapper {
-    background-color: #B4CBE5;
-    color: #2c4e78;
-}
-
 .container-xl {
     max-width: 1200px;
-}
-
-header {
-    margin-bottom: 16px;
 }
 
 .home-text-xl {
@@ -138,11 +129,6 @@ header {
     display: none;
 }
 
-#submenu-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
 /* Logos */
 .submenu {
     margin-top: 25px;
@@ -157,31 +143,6 @@ header {
 
 .logo-im {
     max-width: 60%;
-}
-
-.submenu-accions {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.submenu-accions ul{
-    display: flex;
-    float: right;
-    flex-direction: column;
-    list-style-type: none;
-    justify-content: center;
-    padding-right: 10px;
-    padding-left: 0;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-.submenu-accions ul a{
-    color: #2c4e78;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
 }
 
 /* Sedes */
@@ -555,9 +516,6 @@ footer {
         margin-right: 5px;
     }
 
-    #submenu-wrapper {
-        grid-template-columns: 1fr 2fr;
-    }
 
     .submenu {
         margin-top: 20px;
@@ -565,18 +523,6 @@ footer {
         margin-left: 10px;
         margin-right: 10px;
     }
-
-    .submenu-accions {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    .submenu-accions ul{
-        padding-left: 40px;
-    }
-
 }
 
 @media (min-width: 768px) {
@@ -599,6 +545,7 @@ footer {
     }
 
     .sedes-wrapper {
+        margin-top: 16px;
         grid-template-columns: 1fr 3fr;
     }
 

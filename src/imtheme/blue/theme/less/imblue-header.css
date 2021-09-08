@@ -1,0 +1,33 @@
+.top-wrapper,
+.acctions-wrapper {
+    background-color: #B4CBE5;
+    color: #2c4e78;
+}
+
+#submenu-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.submenu-accions {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.submenu-accions ul{
+    list-style-type: none;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.submenu-accions ul a{
+    color: #2c4e78;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+header {
+    margin-bottom: 16px;
+}
