@@ -84,7 +84,7 @@ body {
     line-height: unset;
     background-color: inherit;
     margin-top: 0px;
-    padding: .5em 1em;
+    padding: 5px 12px;
 }
 
 #portal-globalnav li.selected a,
@@ -553,8 +553,7 @@ footer {
 
     #portal-globalnav > li > a {
         display: block;
-        margin-top: 15px;
-        padding: .5em 1em;
+        padding: 15px 12px;
         border-right: 1px solid #b4cbe5;
         min-width: unset;
     }
