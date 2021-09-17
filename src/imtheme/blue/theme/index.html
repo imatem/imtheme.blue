@@ -103,177 +103,178 @@
 
 
   <div id="main-container" class="container-xl">
-    <div class="sedes-wrapper">
-      <div class="sede-img sede-cu">
-        <div class="sede-title">Ciudad Universitaria</div>
-        <div><a class="sede-calendar" href="http://localhost:8080/infomatem/actividades/allactivitiesview">Calendario de actividades</a></div>
-      </div>
-      <div class="sedes">
-        <div class="sede-img sede-cuernavaca">
-          <div class="sede-title"><a href="http://www.matcuer.unam.mx" title="sitio web" target="_blank">Unidad Cuernavaca</a></div>
-          <div><a class="sede-calendar" href="http://www.matcuer.unam.mx/actividades/" target="_blank">Calendario de actividades</a></div>
+    <div id="main-container-wrapper">
+      <div class="sedes-wrapper">
+        <div class="sede-img sede-cu">
+          <div class="sede-title">Ciudad Universitaria</div>
+          <div><a class="sede-calendar" href="http://localhost:8080/infomatem/actividades/allactivitiesview">Calendario de actividades</a></div>
         </div>
-        <div class="sede-img sede-juriquilla">
-          <div class="sede-title"><a href="http://www.matem-juriquilla.unam.mx" title="sitio web" target="_blank">Unidad Juriquilla</a></div>
-          <div><a class="sede-calendar" href="http://localhost:8080/infomatem/juriquilla/actividades" target="_blank">Calendario de actividades</a></div>
-        </div>
-        <div class="sede-img sede-oaxaca">
-          <div class="sede-title"><a href="https://paginas.matem.unam.mx/oaxaca/" title="sitio web" target="_blank">Unidad Oaxaca</a></div>
-          <div><a class="sede-calendar" href="https://paginas.matem.unam.mx/oaxaca/actividades/" target="_blank">Calendario de actividades</a></div>
-        </div>
-      </div>
-    </div>
-
-  <!-- events -->
-
-
-
-  <section class="tabs-wrapper">
-    <div class="tabs-container">
-        <button id="morning" class="tab">Hoy en el IM</button>
-        <button id="afternoon" class="tab">Actividades de la semana</button>
-      <div class="new-widget">
-        <div id='tabmorning' class="tab-content">
-          <dl id="hoy-en-el-im">
-            <dt> Listado las actividades del día
-            </dt>
-          </dl>
-        </div>
-
-        <div id='tabafternoon' class="tab-content">
-          <dl id="actividades-de-la-semana">
-            <dt> Listado de toda la semana
-            </dt>
-          </dl>
+        <div class="sedes">
+          <div class="sede-img sede-cuernavaca">
+            <div class="sede-title"><a href="http://www.matcuer.unam.mx" title="sitio web" target="_blank">Unidad Cuernavaca</a></div>
+            <div><a class="sede-calendar" href="http://www.matcuer.unam.mx/actividades/" target="_blank">Calendario de actividades</a></div>
+          </div>
+          <div class="sede-img sede-juriquilla">
+            <div class="sede-title"><a href="http://www.matem-juriquilla.unam.mx" title="sitio web" target="_blank">Unidad Juriquilla</a></div>
+            <div><a class="sede-calendar" href="http://localhost:8080/infomatem/juriquilla/actividades" target="_blank">Calendario de actividades</a></div>
+          </div>
+          <div class="sede-img sede-oaxaca">
+            <div class="sede-title"><a href="https://paginas.matem.unam.mx/oaxaca/" title="sitio web" target="_blank">Unidad Oaxaca</a></div>
+            <div><a class="sede-calendar" href="https://paginas.matem.unam.mx/oaxaca/actividades/" target="_blank">Calendario de actividades</a></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="tab-calendar">
-      <button><a href="http://localhost:8080/infomatem/actividades/banner-actividades-academicas">Próximas actividades</a></button>
-      <div id="galleria" class="tab-content"> <img src="images/cienciadatos.jpg" /> </div>
-    </div>
-    <div class="tab-calendar">
-      <button><a href="http://localhost:8080/infomatem/actividades/calendario/agenda">Agenda IM</a></button>
-      <div id="agenda" class="tab-content">
-        <a href="http://localhost:8080/infomatem/actividades/calendario/agenda">
-          <img src="images/calendar.png" />
-        </a>
-      </div>
-    </div>
-  </section>
+      <!-- events -->
+      <section class="tabs-wrapper">
+        <div class="tabs-container">
+            <button id="morning" class="tab">Hoy en el IM</button>
+            <button id="afternoon" class="tab">Actividades de la semana</button>
+          <div class="new-widget">
+            <div id='tabmorning' class="tab-content">
+              <dl id="hoy-en-el-im">
+                <dt> Listado las actividades del día
+                </dt>
+              </dl>
+            </div>
 
-
-
-<!--  -->
-  <div id='container'>
-
-    <main class="main-wrapper">
-
-
-      <div class="column1-container">
-        <div id="rotatednews" class="standard-topic">
-          <h2><a href="http://localhost:8080/infomatem/acerca-de/noticias">NOTICIAS</a></h2>
-          <ul id="rotated" class="line-separated">
-            <li class="lirotated">
-                <a href="https://www.matem.unam.mx/acerca-de/noticias/nueva-mesa-directiva-de-la-sociedad-matematica-mexicana" class="summary url">Junta directiva de la Sociedad Matemática Mexicana 2020-2022</a>
-            </li>
-            <li class="lirotated">
-                <a href="https://www.matem.unam.mx/acerca-de/noticias/siembra-proyecto-para-incursionar-en-las-matematicas" class="summary url">Siembra, proyecto para incursionar en las matemáticas</a>
-            </li>
-          </ul>
-          <a id="rotatedmore" href="#" style="float:right"><span class="triangle-right"></span> más noticias</a>
-        </div>
-
-        <div id="avisos" class="standard-topic news_imstandard">
-          <h2><a href="http://localhost:8080/infomatem/acerca-de/avisos">AVISOS</a></h2>
-          <div id="avisos-content">
-            <h3 class="tileHeadline">
-              <a href="https://www.matem.unam.mx/acerca-de/avisos/paspa-2020" class="summary url">Programa de Apoyos para la Superación del Personal Académico (PASPA 2020)</a>
-            </h3>
-            <p class="tileBody">
-              <span class="description">Convocatoria PASPA 2020. Se informan las fechas para entrega de documentos en Secretaría Académica.</span>
-            </p>
+            <div id='tabafternoon' class="tab-content">
+              <dl id="actividades-de-la-semana">
+                <dt> Listado de toda la semana
+                </dt>
+              </dl>
+            </div>
           </div>
         </div>
 
-      </div>
-
-      <div class="toblerone-container standard-topic">
-        <h2><a href="http://localhost:8080/infomatem/actividades/baner">DIVULGACIÓN</a></h2>
-        <div id="toblerone" class="toblerone-container-img"> <img src="images/circulos.jpg" /> </div>
-      </div>
-
-      <div class="content-container">
-        <a href="https://paginas.matem.unam.mx/covid" target="_blank"><img src="images/plecas/protocolo_covid.jpg"></a>
-        <a href="http://localhost:8080/infomatem/actividades/escuelas"><img src="images/plecas/escuelas.jpg"></a>
-        <a href="http://localhost:8080/infomatem/docencia"><img src="images/plecas/docencia.jpg"></a>
-        <a href="http://localhost:8080/infomatem/vinculacion"><img src="images/plecas/vinculacion.jpg"></a>
-        <a href="http://localhost:8080/infomatem/fsd/plazas"><img src="images/plecas/posiciones.jpg"></a>
-        <a href="http://papirhos.matem.unam.mx" target="_blank"><img src="images/plecas/publicaciones.jpg"></a>
-
-      </div>
-
-      <div class="column2-container">
-        <div id="exchanges" class="standard-topic">
-          <h2>INTERCAMBIO ACADÉMICO</h2>
+        <div class="tab-calendar">
+          <button><a href="http://localhost:8080/infomatem/actividades/banner-actividades-academicas">Próximas actividades</a></button>
+          <div id="galleria" class="tab-content"> <img src="images/cienciadatos.jpg" /> </div>
         </div>
 
-        <div class="sevicios-container standard-topic">
-          <h2>SERVICIOS AL PÚBLICO</h2>
-          <ul>
-            <li><a href="">Becas de lugar en el IM</a></li>
-            <li><a href="">Biblioteca Sotero Prieto</a></li>
-            <li><a href="">Biblioteca Solomon Lefschetz Cuernavaca</a></li>
-            <li><a href="">Publicaciones/Papirhos</a></li>
-            <li><a href="">Comunicación</a></li>
-            <li><a href="">Prensa</a></li>
-            <li><a href="">Formatos autorización uso de imagen IMUNAM (foto, video)</a></li>
-            <li><a href="">Enlaces de interés</a></li>
-          </ul>
+        <div class="tab-calendar">
+          <button><a href="http://localhost:8080/infomatem/actividades/calendario/agenda">Agenda IM</a></button>
+          <div id="agenda" class="tab-content">
+            <a href="http://localhost:8080/infomatem/actividades/calendario/agenda">
+              <img src="images/calendar.png" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <div id='container'>
+
+        <main class="main-wrapper">
+
+
+          <div class="column1-container">
+            <div id="rotatednews" class="standard-topic">
+              <h2><a href="http://localhost:8080/infomatem/acerca-de/noticias">NOTICIAS</a></h2>
+              <ul id="rotated" class="line-separated">
+                <li class="lirotated">
+                    <a href="https://www.matem.unam.mx/acerca-de/noticias/nueva-mesa-directiva-de-la-sociedad-matematica-mexicana" class="summary url">Junta directiva de la Sociedad Matemática Mexicana 2020-2022</a>
+                </li>
+                <li class="lirotated">
+                    <a href="https://www.matem.unam.mx/acerca-de/noticias/siembra-proyecto-para-incursionar-en-las-matematicas" class="summary url">Siembra, proyecto para incursionar en las matemáticas</a>
+                </li>
+              </ul>
+              <a id="rotatedmore" href="#" style="float:right"><span class="triangle-right"></span> más noticias</a>
+            </div>
+
+            <div id="avisos" class="standard-topic news_imstandard">
+              <h2><a href="http://localhost:8080/infomatem/acerca-de/avisos">AVISOS</a></h2>
+              <div id="avisos-content">
+                <h3 class="tileHeadline">
+                  <a href="https://www.matem.unam.mx/acerca-de/avisos/paspa-2020" class="summary url">Programa de Apoyos para la Superación del Personal Académico (PASPA 2020)</a>
+                </h3>
+                <p class="tileBody">
+                  <span class="description">Convocatoria PASPA 2020. Se informan las fechas para entrega de documentos en Secretaría Académica.</span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="toblerone-container standard-topic">
+            <h2><a href="http://localhost:8080/infomatem/actividades/baner">DIVULGACIÓN</a></h2>
+            <div id="toblerone" class="toblerone-container-img"> <img src="images/circulos.jpg" /> </div>
+          </div>
+
+          <div class="content-container">
+            <a href="https://paginas.matem.unam.mx/covid" target="_blank"><img src="images/plecas/protocolo_covid.jpg"></a>
+            <a href="http://localhost:8080/infomatem/actividades/escuelas"><img src="images/plecas/escuelas.jpg"></a>
+            <a href="http://localhost:8080/infomatem/docencia"><img src="images/plecas/docencia.jpg"></a>
+            <a href="http://localhost:8080/infomatem/vinculacion"><img src="images/plecas/vinculacion.jpg"></a>
+            <a href="http://localhost:8080/infomatem/fsd/plazas"><img src="images/plecas/posiciones.jpg"></a>
+            <a href="http://papirhos.matem.unam.mx" target="_blank"><img src="images/plecas/publicaciones.jpg"></a>
+
+          </div>
+
+          <div class="column2-container">
+            <div id="exchanges" class="standard-topic">
+              <h2>INTERCAMBIO ACADÉMICO</h2>
+            </div>
+
+            <div class="sevicios-container standard-topic">
+              <h2>SERVICIOS AL PÚBLICO</h2>
+              <ul>
+                <li><a href="">Becas de lugar en el IM</a></li>
+                <li><a href="">Biblioteca Sotero Prieto</a></li>
+                <li><a href="">Biblioteca Solomon Lefschetz Cuernavaca</a></li>
+                <li><a href="">Publicaciones/Papirhos</a></li>
+                <li><a href="">Comunicación</a></li>
+                <li><a href="">Prensa</a></li>
+                <li><a href="">Formatos autorización uso de imagen IMUNAM (foto, video)</a></li>
+                <li><a href="">Enlaces de interés</a></li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div class="projects-container">
+        <div class="project">
+          <a href="https://paginas.matem.unam.mx/cmo/" target="_blank"><img src="images/proyectos/cmo.svg" alt="CMO"></a>
+        </div>
+        <div class="project">
+          <a href="http://www.umi-lasol.matem.unam.mx/" target="_blank"><img src="images/proyectos/lasol.svg" alt="LaSoL"></a>
+        </div>
+        <div class="project">
+          <a href="http://festivalmcc.matem.unam.mx/" target="_blank"><img src="images/proyectos/festivalmcc.svg" alt="Festival de Matemáticas Ciencia y Cultura"></a>
+        </div>
+        <div class="project">
+          <a href="http://festival.matem.unam.mx/" target="_blank"><img src="images/proyectos/festivalmat.svg" alt="Festival Matemático"></a>
+        </div>
+        <div class="project">
+          <a href="https://www.facebook.com/matematicasparalapaz" target="_blank"><img src="images/proyectos/artemat.svg" alt="ArteMat"></a>
+        </div>
+        <div class="project">
+          <a href="http://www.matcuer.unam.mx/siembra/" target="_blank"><img src="images/proyectos/siembra.svg" alt="SIEMBRA"></a>
+        </div>
+        <div class="project">
+          <a href="https://sites.google.com/view/profe2018/p%C3%A1gina-principal" target="_blank"><img src="images/proyectos/profe.svg" alt="PROFE"></a>
         </div>
       </div>
-    </main>
-  </div>
 
-  <div class="projects-container">
-    <div class="project">
-      <a href="https://paginas.matem.unam.mx/cmo/" target="_blank"><img src="images/proyectos/cmo.svg" alt="CMO"></a>
-    </div>
-    <div class="project">
-      <a href="http://www.umi-lasol.matem.unam.mx/" target="_blank"><img src="images/proyectos/lasol.svg" alt="LaSoL"></a>
-    </div>
-    <div class="project">
-      <a href="http://festivalmcc.matem.unam.mx/" target="_blank"><img src="images/proyectos/festivalmcc.svg" alt="Festival de Matemáticas Ciencia y Cultura"></a>
-    </div>
-    <div class="project">
-      <a href="http://festival.matem.unam.mx/" target="_blank"><img src="images/proyectos/festivalmat.svg" alt="Festival Matemático"></a>
-    </div>
-    <div class="project">
-      <a href="https://www.facebook.com/matematicasparalapaz" target="_blank"><img src="images/proyectos/artemat.svg" alt="ArteMat"></a>
-    </div>
-    <div class="project">
-      <a href="http://www.matcuer.unam.mx/siembra/" target="_blank"><img src="images/proyectos/siembra.svg" alt="SIEMBRA"></a>
-    </div>
-    <div class="project">
-      <a href="https://sites.google.com/view/profe2018/p%C3%A1gina-principal" target="_blank"><img src="images/proyectos/profe.svg" alt="PROFE"></a>
+      <div style="clear:both;"></div>
     </div>
   </div>
 
-  <div style="clear:both;"></div>
   <footer class="top-wrapper">
     <div id="footer-container" class="container-xl">
-    <div class="empty"></div>
+      <!-- <div class="empty"></div> -->
       <div class="footer-action">
         <ul id="portal-siteactions"><li>Mapa del sitio</li><li>Acerca de este sitio</li><li>Aviso de privacidad</li><li>Contacto</li></ul>
       </div>
       <div class="footer-center">
         <ul><li>Instituto de Matemáticas</li><li><a href="https://www.unam.mx/" target="_blank">Universidad Nacional</a> </li><li><a href="https://www.unam.mx/" target="_blank">Autónoma de México</a></li><li>Área de la Investigación Científica</li></ul>
       </div>
-    <div class="footer-address">
-      <ul><li>Circuito exterior,</li><li>Ciudad Universitaria, 04510,</li><li>México, CDMX</li><li class="footer-phone">Teléfonos:</li><li>(+52) (55) 5622 4520, 21, 22</li></ul>
+      <div class="footer-address">
+        <ul><li>Circuito exterior,</li><li>Ciudad Universitaria, 04510,</li><li>México, CDMX</li><li class="footer-phone">Teléfonos:</li><li>(+52) (55) 5622 4520, 21, 22</li></ul>
+      </div>
     </div>
-   </div>
   </footer>
+
 </body>
 
 </html>
