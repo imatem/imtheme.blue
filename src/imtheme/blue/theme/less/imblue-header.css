@@ -5,7 +5,7 @@
 
 #submenu-wrapper {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 .submenu-accions {
@@ -30,3 +30,17 @@
 header {
     margin-bottom: 16px;
 }
+
+.top-bar{
+    display: flex;
+}
+
+.logos-wrapper {
+    min-width: 380px;
+    margin-right: auto;
+}
+
+.logos-wrapper img {
+    margin: 10px 35px 10px 5px;
+}
+
