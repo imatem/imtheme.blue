@@ -41,11 +41,11 @@ header {
 }
 
 .logos-wrapper {
-    min-width: 380px;
+    min-width: 350px;
     margin-right: auto;
 }
 
 .logos-wrapper img {
-    margin: 10px 35px 10px 5px;
+    margin: 10px 5px;
 }
 
