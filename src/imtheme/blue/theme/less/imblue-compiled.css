@@ -640,21 +640,8 @@ footer {
         font-size: 1.3em;
     }
 
-    #portal-globalnav  > li:nth-last-child(2){
-        margin-left: 0px;
-    }
-}
-
-/* @media (min-width: 955px) {
-    #portal-globalnav  > li:nth-last-child(4){
-        margin-right: 550px;
-    }
-
-} */
-
-@media (min-width: 1165px) {
-    #portal-globalnav  > li:nth-last-child(4){
-        margin-right: 0px;
+    #portal-globalnav  > li:nth-last-child(3){
+        margin-left: auto;
     }
 }
 
@@ -678,16 +665,6 @@ footer {
         margin-left:15px;
         font-weight: bold;
     }
-
-    .navigation {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #portal-globalnav  > li:nth-last-child(3){
-        margin-left: auto;
-    }
-
 }
 
 /* Slicebox Style */
