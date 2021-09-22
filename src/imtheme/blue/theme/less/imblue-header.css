@@ -5,6 +5,7 @@
 
 #submenu-wrapper {
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .submenu-accions {
@@ -17,6 +18,11 @@
     padding-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.submenu-accions ul li{
+    display:  inline;
+    padding-left: 1em;
 }
 
 .submenu-accions ul a{
