@@ -685,7 +685,7 @@ footer {
     }
 
     #portal-globalnav  > li:nth-last-child(3){
-        margin-left: 1.5em;
+        margin-left: auto;
     }
 
 }
