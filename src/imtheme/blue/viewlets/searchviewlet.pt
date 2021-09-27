@@ -32,9 +32,8 @@
                                        checked request/form/path|nothing"
                        />
                 <label for="searchbox_currentfolder_only"
-                       i18n:translate="label_searchbox_currentfolder_only"
                        style="cursor: pointer; font-weight: normal;color: #2c4e78;">
-                    only in current section
+                     solo en sección actual
                 </label>
             </div>
           </div> <!-- end izquierdo -->

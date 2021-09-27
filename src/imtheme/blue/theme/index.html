@@ -12,10 +12,12 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <link rel="stylesheet" href="less/imblue-compiled.css">
+  <link rel="stylesheet" href="less/imblue-compiledv1.css">
   <link rel="stylesheet" href="less/imblue-projects.css">
   <link rel="stylesheet" href="less/imblue-mainpage.css?rnd=132">
   <link rel="stylesheet" href="less/imblue-events.css">
+  <link rel="stylesheet" href="less/imblue-header.css">
+
 
   <!-- js already registered in plone -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -23,42 +25,54 @@
   <script id="slicebox"src="js/jquery.slicebox.min.js"></script>
   <script id="imslider" src="js/imslider.js" defer="defer"></script>
   <script src="js/menu.js"></script>
-  <script src="js/tabs.js"></script>
+  <script id="home_tabs" src="js/tabs.js"></script>
   <script src="https://kit.fontawesome.com/56d3fefca7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header id="main-header" class="main-header">
 
-    <div class="top-wrapper">
-      <div class="social-media container-xl">
-        <a href="http://localhost:8080/infomatem">
-          <samp class="home-text-xl">INICIO</samp>
-        </a>
-        <a href="http://localhost:8080/infomatem/servicios/correo-interno">
-          <img width="25" height="30" src="images/icons-svgs/envelope-regular.svg" alt="Correo Interno">
-          <samp class="correo-interno top-text-xl">Correo interno</samp>
-        </a>
-        <a href="https://www.youtube.com/channel/UC-_-zDEIsqM3h_jH14JzkTA" target="_blank">
-          <img width="27" height="30" src="images/icons-svgs/youtube-brands.svg" alt="IM en Yotube">
-        </a>
-        <a href="https://www.instagram.com/imate.unam/" target="_blank">
-          <img width="22" height="30" src="images/icons-svgs/instagram-brands.svg" alt="Instagram IM">
-        </a>
-        <a href="https://www.facebook.com/imateunam/" target="_blank">
-          <img width="23" height="30" src="images/icons-svgs/facebook-square-brands.svg" alt="Facebook IM">
-        </a>
-        <a href="https://twitter.com/imate_unam" target="_blank">
-          <img width="23" height="30" src="images/icons-svgs/twitter-square-brands.svg" alt="Twitter IM">
-        </a>
+    <div class="full-width-wrapper">
+      <div class="top-bar container-xl">
+        <div class="logos-wrapper">
+          <a href="https://www.unam.mx/" target="_blank"><img class="logo-unam" src="images/escudo_unam.png" alt="UNAM"></a>
+          <a id="im-logo" href="#"><img class="logo-im" src="images/logo_imunam80.png" alt="Instituto de Matemáticas"></a>
+        </div>
 
-        <!-- <div class="session"> -->
-          <!-- <a href="http://localhost:8080/infomatem/@@search"><img width="25" src="images/icons-svgs/search-solid.svg" alt="búsqueda"></a> -->
-          <!-- <samp class="top-text-xl entrar"><a id="user-name" href="">Entrar</a></samp> -->
-        <div class="session" style="display: -webkit-box;">
-          <div id=mysearchbox-wrapper style="padding-right: 1em;"></div>
-          <samp class="top-text-xl entrar"><a id="user-name" href="" style="padding-right: 1em;">Entrar</a></samp>
-          <img width="25" src="images/icons-svgs/sign-in-alt-solid.svg" alt="Login">
+        <div class="user_info">
+          <div>
+            <div class="social-media"> 
+              <a href="https://www.youtube.com/channel/UC-_-zDEIsqM3h_jH14JzkTA" target="_blank">
+                <img width="27" height="30" src="images/icons-svgs/youtube-brands.svg" alt="IM en Yotube">
+              </a>
+              <a href="https://www.instagram.com/imate.unam/" target="_blank">
+                <img width="22" height="30" src="images/icons-svgs/instagram-brands.svg" alt="Instagram IM">
+              </a>
+              <a href="https://www.facebook.com/imateunam/" target="_blank">
+                <img width="23" height="30" src="images/icons-svgs/facebook-square-brands.svg" alt="Facebook IM">
+              </a>
+              <a href="https://twitter.com/imate_unam" target="_blank">
+                <img width="23" height="30" src="images/icons-svgs/twitter-square-brands.svg" alt="Twitter IM">
+              </a>
+              <a href="http://localhost:8080/infomatem/servicios/correo-interno">
+                <img width="25" height="30" src="images/icons-svgs/envelope-regular.svg" alt="Correo Interno">
+                <samp class="correo-interno top-text-xl">Correo interno</samp>
+              </a>
+            </div>
+
+            <!-- <div class="session"> -->
+              <!-- <a href="http://localhost:8080/infomatem/@@search"><img width="25" src="images/icons-svgs/search-solid.svg" alt="búsqueda"></a> -->
+              <!-- <samp class="top-text-xl entrar"><a id="user-name" href="">Entrar</a></samp> -->
+            <div class="session" style="display: -webkit-box;">
+              <div id=mysearchbox-wrapper style="padding-right: 1em;"></div>
+              <!-- <img width="25" src="images/icons-svgs/sign-in-alt-solid.svg" alt="Login"> -->
+            </div>
+          </div>
+
+          <div style="margin-top: 10px;">
+            <samp class="top-text-xl entrar"><a id="user-name" href="" style="padding-right: 1em;">Entrar</a></samp>
+            <div></div>
+          </div>
         </div>
       </div>
     </div>
@@ -80,30 +94,31 @@
       </ul>
     </nav>
 
-    <div id="submenu-wrapper" class="container-xl">
-      <div class="submenu">
-        <a href="https://www.unam.mx/" target="_blank"><img class="logo-unam" src="images/unam-escudo-azul.png" alt="UNAM"></a>
-        <a id="im-logo" href="#"><img class="logo-im" src="images/logo_imunam.png" alt="Instituto de Matemáticas"></a>
-      </div>
-      <div class="submenu-accions">
-        <ul>
-          <li>Contacto</li>
-        </ul>
+    <div class="full-width-wrapper">
+      <div id="submenu-wrapper" class="container-xl">
+        <div class="submenu-accions">
+          <ul>
+            <li>Contacto</li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div id="slider-wrapper" class="container-xl">
-      <div class="mySlides fade" style="display: block;">
-        <a>
-          <img style="width:100%" src="images/imbanner.jpg">
-        </a>
-      </div>
-    </div>
+
   </header>
 
 
   <div id="main-container" class="container-xl">
     <div id="main-container-wrapper">
+
+      <div id="slider-wrapper" class="container-xl">
+        <div class="mySlides fade" style="display: block;">
+          <a>
+            <img style="width:100%" src="images/imbanner.jpg">
+          </a>
+        </div>
+      </div>
+
       <div class="sedes-wrapper">
         <div class="sede-img sede-cu">
           <div class="sede-title">Ciudad Universitaria</div>
@@ -260,7 +275,7 @@
     </div>
   </div>
 
-  <footer class="top-wrapper">
+  <footer class="full-width-wrapper">
     <div id="footer-container" class="container-xl">
       <!-- <div class="empty"></div> -->
       <div class="footer-action">

@@ -60,12 +60,13 @@
         <after css:theme-children="head" css:content="head script" />
         <merge attributes="class" css:theme="body" css:content="body" />
         <!-- roler -->
-        <drop css:theme="#slider-wrapper" />
+        <!-- <drop css:theme="#slider-wrapper" /> -->
         <replace css:theme-children="#main-container" css:content-children="#portal-columns" />
         <!-- drop the theme duplicate jsavascript -->
         <drop css:theme="#imslider" />
         <drop css:theme="#slicebox" />
         <drop css:theme="#modernizr" />
+        <drop css:theme="#home_tabs" />
     </rules>
 
     <replace css:theme="#portal-siteactions" css:content="#portal-siteactions" method="raw" />

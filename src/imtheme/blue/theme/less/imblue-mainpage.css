@@ -11,6 +11,7 @@
 
 #wrapper-sb-slider {
     position: relative;
+    margin-bottom: 20px;
 }
 
 .arrow {
@@ -46,6 +47,11 @@
     transform: translate(-40%, -60%) rotate(45deg);
     width: 200%;
     height: 200%;
+}
+
+
+#slider-wrapper {
+    margin-top: -16px;
 }
 
 @media (min-width: 768px) {
