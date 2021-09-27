@@ -38,10 +38,11 @@ header {
 
 .top-bar{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .logos-wrapper {
-    min-width: 350px;
+    min-width: 375px;
     margin-right: auto;
 }
 
