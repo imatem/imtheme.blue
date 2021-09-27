@@ -49,3 +49,6 @@ header {
     margin: 10px 5px;
 }
 
+.user_info {
+    display: flex;
+}
