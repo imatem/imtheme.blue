@@ -50,10 +50,6 @@
 }
 
 
-#slider-wrapper {
-    margin-top: -16px;
-}
-
 @media (min-width: 768px) {
     .main-wrapper {
         grid-template-columns: 1fr 2fr 1fr;

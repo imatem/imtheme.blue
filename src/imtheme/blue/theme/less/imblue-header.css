@@ -2,6 +2,9 @@
     background-color: #B4CBE5;
     color: #2c4e78;
 }
+.full-width-wrapper2 {
+    background-color: rgba(180, 203, 229,0.3);
+}
 
 #submenu-wrapper {
     padding-top: 10px;
