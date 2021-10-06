@@ -13,10 +13,12 @@
     </ul>
   </tal:block>
 
-  <ul class="globallinks ">
-    <li><a tal:attributes="href string:${context/portal_url}/acerca-de/comollegar">Cómo llegar</a></li>
-    <li><a tal:attributes="href string:${context/portal_url}/contact-info-im">Contacto</a></li>
-  </ul>
+  <tal:block condition="view/is_anonymous">
+    <ul class="globallinks ">
+      <li><a tal:attributes="href string:${context/portal_url}/acerca-de/comollegar">Cómo llegar</a></li>
+      <li><a tal:attributes="href string:${context/portal_url}/contact-info-im">Contacto</a></li>
+    </ul>
+  </tal:block>
 
   <ul class="globallinks ">
     <li><a tal:attributes="href string:${context/portal_url}/acerca-de/estructura-interna/secretaria-academica/informes/anuales">Informes institucionales</a></li>
