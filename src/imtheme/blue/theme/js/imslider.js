@@ -60,7 +60,7 @@ $(function() {
         autoplay : true,
         speed : 600,
         interval: 5000,
-        colorHiddenSides : '#222',
+        colorHiddenSides : '#EFEFF6',
         reverse :false,
       } ),
 
