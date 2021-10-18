@@ -6,11 +6,6 @@
     background-color: rgba(180, 203, 229,0.3);
 }
 
-#submenu-wrapper {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 .submenu-accions {
     display: flex;
     flex-direction: row-reverse;
@@ -19,8 +14,8 @@
 .submenu-accions ul{
     list-style-type: none;
     padding-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .submenu-accions ul li{
