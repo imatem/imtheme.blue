@@ -15,6 +15,10 @@ body {
     font-weight: bold;
 }
 
+.portaltype-fsdclassification #portal-column-one, 
+.portaltype-fsdperson #portal-column-one {
+    display: none;
+}
 
 /* Social media */
 .social-media{
@@ -513,6 +517,11 @@ footer {
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    .portaltype-fsdclassification #portal-column-one, 
+    .portaltype-fsdperson #portal-column-one {
+        display: block;
+    }
 }
 
 @media (min-width: 768px) {
@@ -970,4 +979,11 @@ div.collection_im_without_summary div.documentByLine{
 
 #title-ac307ba2f41b4e0c97eac5ec63df8af8 {
     display: none;
+}
+
+
+/* fix footer in allapplications view */
+
+.fix-footer {
+    display: contents;
 }
