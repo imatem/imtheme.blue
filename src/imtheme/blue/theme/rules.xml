@@ -53,6 +53,8 @@
     </rules>
 
     <rules css:if-not-content=".section-inicio">
+        <!-- Meta -->
+        <before css:theme="head title" css:content="head meta" />
         <!-- CSS -->
         <after css:theme-children="head" css:content="head link" />
         <before css:theme-children="head" css:content="head style" />
