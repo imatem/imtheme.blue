@@ -1,13 +1,13 @@
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .project {
-    flex: 0 1 160px;
+    flex: 0 1 175px;
     margin: auto;
     margin-bottom: 10px;
 }
