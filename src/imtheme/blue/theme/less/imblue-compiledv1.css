@@ -275,7 +275,7 @@ body {
     margin-bottom: 0px;
 }
 .sevicios-container li {
-    padding-bottom: 12px;
+    padding-bottom: 10px;
 }
 
 .sevicios-container li:last-child {
@@ -504,6 +504,11 @@ footer {
     color: #2E77CE;
 }
 
+.plecas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px;
+}
 
 @media (min-width: 660px) {
     .social-media img {
@@ -619,7 +624,7 @@ footer {
 
     /* Main */
     .sevicios-container li {
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     #footer-container ul li{
