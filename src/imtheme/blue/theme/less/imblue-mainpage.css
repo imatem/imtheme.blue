@@ -53,6 +53,34 @@ div.position-3\:4 {
     margin-left: 0;
 }
 
+
+/* SERVICIOS AL PÚBLICO */
+.sevicios-container {
+    background-color: #b4cbe5;
+    text-align: center;
+}
+
+.sevicios-container.standard-topic h2 {
+    color: #2d4f79;
+    border-left: 0px;
+}
+
+.sevicios-container ul {
+    padding-left: 0px;
+}
+
+.sevicios-container li a,
+.sevicios-container li a:visited {
+    color: #2d4f79;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.sevicios-container li a:hover {
+    color: #2c786e;
+}
+
+
 @media (min-width: 768px) {
     .main-wrapper {
         grid-template-columns: 1fr 2fr 1fr;
@@ -91,5 +119,12 @@ div.position-3\:4 {
 
     .sevicios-container {
         padding-top: 10px;
+        padding-bottom: 10px;
     }
+
+    .sevicios-container ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
 }

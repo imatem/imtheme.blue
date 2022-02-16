@@ -269,28 +269,13 @@ body {
     display: block;
 }
 
-.sevicios-container ul {
-    list-style: none;
-    padding-left: 5px;
-    margin-bottom: 0px;
-}
-.sevicios-container li {
-    padding-bottom: 10px;
-}
 
-.sevicios-container li:last-child {
-    padding-bottom: 0px;
-}
-
-.sevicios-container li a,
-.sevicios-container li a:visited,
 #portal-siteactions li a,
 #portal-siteactions li a:visited {
     text-decoration: none;
     color: #2C4E78;
 }
 
-.sevicios-container li a:hover,
 #portal-siteactions li a:hover {
     color: #2c786e;
 }
@@ -620,11 +605,6 @@ footer {
     }
     .unidades-h span{
         margin-bottom: 25px;
-    }
-
-    /* Main */
-    .sevicios-container li {
-        padding-bottom: 10px;
     }
 
     #footer-container ul li{
