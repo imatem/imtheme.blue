@@ -538,10 +538,6 @@ footer {
         grid-template-columns: 2fr 1fr 1fr;
     }
 
-    .navigation .fa {
-        display: none;
-    }
-
     #portal-globalnav {
         display: flex;
         flex-wrap: wrap;
