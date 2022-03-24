@@ -31,15 +31,11 @@ nav {
     content: '\f068';
 }
 
-/* .navigation .text-menu {
-    font-size: 1.2em;
-    font-family: 'Open Sans', sans-serif;
-} */
-
-/* .supermenu {
-  justify-content: space-between;
-  align-items: center;
-} */
+#portal-globalnav li a .icaret {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
 
 #portal-globalnav {
     list-style-type: none;
@@ -48,9 +44,12 @@ nav {
     background-color: inherit;
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
 }
 
+#portal-globalnav [id$="-level1"] {
+    order: 3;
+    width: 100%;
+}
 
 #portal-globalnav li a {
     display: none;
@@ -68,14 +67,15 @@ nav {
     display: block;
 }
 
+#portal-globalnav li ul.submenu-active {
+  display: block;
+  position: unset;
+}
+
 #portal-globalnav li.selected a,
 #portal-globalnav:hover li:hover > a{
     background-color: #f4b31a;
     color: #2c4e78;
-}
-
-#portal-globalnav.responsive li a {
-    display: block;
 }
 
 #portal-globalnav ul li a.hasChildrens,
@@ -98,12 +98,6 @@ nav {
 #portal-globalnav ul li a {
     border-bottom: 4px solid rgb(239, 246, 247);
     border-top: 0;
-}
-
-#portal-globalnav ul li a.hasChildrens,
-#portal-globalnav ul li a.hasChildrens:hover{
-    background-image: url(++theme++im-theme-blue/images/ddm-pointer.png);
-    background-position: 98% 50%;
 }
 
 #portal-globalnav li:hover > ul {
@@ -136,6 +130,15 @@ nav {
         text-align: unset;
     }
 
+    #portal-globalnav [id$="-level1"] {
+      order: 3;
+      width: auto;
+    }
+
+    #portal-globalnav li a .icaret {
+      display: none;
+    }
+
     #portal-globalnav > li > a {
         display: block;
         padding: 15px 12px;
@@ -166,6 +169,12 @@ nav {
     #portal-globalnav > li:nth-last-child(-n+3) ul li:hover > a {
         color: #2c4e78;
         border-bottom: 4px solid rgb(185, 36, 44);
+    }
+
+    #portal-globalnav ul li a.hasChildrens,
+    #portal-globalnav ul li a.hasChildrens:hover{
+        background-image: url(++theme++im-theme-blue/images/ddm-pointer.png);
+        background-position: 98% 50%;
     }
 
     #portal-globalnav > li:nth-last-child(-n+3) ul li a.hasChildrens,
