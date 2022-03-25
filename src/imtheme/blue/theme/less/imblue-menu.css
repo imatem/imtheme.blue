@@ -73,6 +73,7 @@ nav {
 #portal-globalnav li ul.submenu-active {
     display: block;
     position: unset;
+    padding-left: 40px;
 }
 
 #portal-globalnav li.selected ul li a {
@@ -93,15 +94,6 @@ nav {
     background-color: transparent;
 }
 
-
-
-/*
-
-
-
-#portal-globalnav li:hover > ul {
-    display: none;
-} */
   
 @media (min-width: 768px) {
 
