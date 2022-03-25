@@ -65,6 +65,7 @@ nav {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #2c4e78;
+    background-color: unset;
     text-decoration: none;
 }
 
@@ -73,6 +74,12 @@ nav {
     display: block;
     position: unset;
 }
+
+#portal-globalnav li.selected ul li a {
+  background-color: inherit;
+  color: #205C90;
+}
+
 
 #portal-globalnav li a span {
     display: unset;
