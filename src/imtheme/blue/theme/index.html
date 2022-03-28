@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="less/imblue-mainpage.css?rnd=132">
   <link rel="stylesheet" href="less/imblue-events.css">
   <link rel="stylesheet" href="less/imblue-header.css">
+  <link rel="stylesheet" href="less/imblue-menu.css">
 
 
   <!-- js already registered in plone -->
@@ -24,7 +25,7 @@
   <script id="modernizr" src="js/modernizr.js"></script>
   <script id="slicebox"src="js/jquery.slicebox.min.js"></script>
   <script id="imslider" src="js/imslider.js" defer="defer"></script>
-  <script src="js/menu.js"></script>
+  <script src="js/menu.js" defer></script>
   <script id="home_tabs" src="js/tabs.js"></script>
   <script src="https://kit.fontawesome.com/56d3fefca7.js" crossorigin="anonymous"></script>
 </head>
@@ -88,9 +89,11 @@
     </div>
 
     <nav id="navigation-wrapper"  class="navigation container-xl">
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"> <span class="text-menu">Menú</span></i>
-      </a>
+      <div class="toggle">  
+        <a href="#" class="icon">
+          <i class="fa fa-bars"> <span class="text-menu">Menú</span></i>
+        </a>
+      </div>
       <ul id="portal-globalnav" class="supermenu">
         <li><a href="about/">Acerca del IM</a></li>
         <li><a href="">Investigación</a></li>
@@ -309,7 +312,7 @@
         <ul><li>Instituto de Matemáticas</li><li><a href="https://www.unam.mx/" target="_blank">Universidad Nacional</a> </li><li><a href="https://www.unam.mx/" target="_blank">Autónoma de México</a></li><li>Área de la Investigación Científica</li></ul>
       </div>
       <div class="footer-address">
-        <ul><li>Circuito exterior,</li><li>Ciudad Universitaria, 04510,</li><li>México, CDMX</li><li class="footer-phone">Teléfonos:</li><li>(+52) (55) 5622 4520, 21, 22</li></ul>
+        <ul><li><a href="http://localhost:8080/infomatem/acerca-de/comollegar">Cómo llegar</a></li><li>Circuito exterior,</li><li>Ciudad Universitaria, 04510,</li><li>México, CDMX</li><li class="footer-phone">Teléfonos:</li><li>(+52) (55) 5622 4520, 21, 22</li></ul>
       </div>
     </div>
   </footer>
