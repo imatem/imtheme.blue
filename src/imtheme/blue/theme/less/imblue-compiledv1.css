@@ -193,7 +193,9 @@ body {
 
 
 #portal-siteactions li a,
-#portal-siteactions li a:visited {
+#portal-siteactions li a:visited,
+.footer-address li a,
+.footer-address li a:visited {
     text-decoration: none;
     color: #2C4E78;
 }
