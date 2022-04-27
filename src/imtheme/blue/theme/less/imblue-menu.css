@@ -63,6 +63,10 @@ nav {
     position: inherit;
 }
 
+#portal-globalnav li:hover > ul {
+    display: none;
+}
+
 #portal-globalnav li a {
     display: block;
     padding: 5px 15px;
