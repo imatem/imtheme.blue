@@ -59,6 +59,10 @@ nav {
 }
 */
 
+#portal-globalnav li {
+    position: inherit;
+}
+
 #portal-globalnav li a {
     display: block;
     padding: 5px 15px;
@@ -130,6 +134,10 @@ nav {
     #portal-globalnav [id$="-level1"] {
         width: auto;
         display: block;
+    }
+
+    #portal-globalnav li {
+        position: relative;
     }
 
     #portal-globalnav li a {
