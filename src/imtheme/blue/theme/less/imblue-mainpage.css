@@ -84,7 +84,7 @@ div.position-3\:4 {
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     top: 50%;
     width: auto;
     margin-top: -22px;
@@ -95,7 +95,7 @@ div.position-3\:4 {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+}
   
   /* Position the "next button" to the right */
   .next {

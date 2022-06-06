@@ -328,6 +328,10 @@ footer {
     text-align: center;
 }
 
+#galleria {
+    position: relative;
+}
+
 #galleria,
 #agenda,
 #galleria2 {
