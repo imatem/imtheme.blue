@@ -16,6 +16,7 @@
         tal:condition="python: view.adapter.number_of_images > 0"
         tal:define="theclass python:'galleria-container galleriatheme_' + view.settings.galleria_theme"
         tal:attributes="class theclass" >
+
         <tal:images tal:repeat="img view/adapter/cooked_images">
             <a href="" tal:define="link python:view.link(img)"
               tal:attributes="href link/href; target link/target">
@@ -24,5 +25,12 @@
                                     src img/original_image_url;"/>
             </a>
         </tal:images>
+
+      <div id="galleria-arrows" class="galleria-arrows">
+        <a class="next" onclick="showcarruselPlus(1)">&#10095;</a>
+        <a class="prev" onclick="showcarruselPlus(-1)">&#10094;</a>
+      </div>
+
+
     </div>
 </tal:gallery>
