@@ -24,3 +24,17 @@ $(document).ready(function(){
     }
 
 });
+
+
+let carrusel_index = 1;
+
+function showcarruselPlus(n) {
+  carrusel_index += n
+  let slides = $("#galleria > a");
+  slides.hide();
+
+  if (carrusel_index > slides.length) {carrusel_index = 1}
+  if (carrusel_index < 1) {carrusel_index = slides.length}
+
+  slides[carrusel_index-1].style.display = "unset";
+} 

@@ -98,15 +98,19 @@ div.position-3\:4 {
 }
   
   /* Position the "next button" to the right */
-  .next {
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
+}
+
+.prev {
+    left: 0;
+}
+
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
+.prev:hover, .next:hover {
+    background-color: #1D446D;
+}
 
 
 @media (min-width: 768px) {

@@ -26,12 +26,10 @@
             </a>
         </tal:images>
 
-<div id="galleria-arrows" class="galleria-arrows">
-  <!-- <a href="#" class="arrow right"></a>
-  <a href="#" class="arrow left"></a> -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
+      <div id="galleria-arrows" class="galleria-arrows">
+        <a class="next" onclick="showcarruselPlus(1)">&#10095;</a>
+        <a class="prev" onclick="showcarruselPlus(-1)">&#10094;</a>
+      </div>
 
 
     </div>
