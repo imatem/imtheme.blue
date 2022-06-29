@@ -14,9 +14,12 @@
   </ul>
 
 <div id="nav-arrows" class="nav-arrows">
-  <a href="#" class="arrow right"></a>
-  <a href="#" class="arrow left"></a>
+  <!-- <a href="#" class="arrow right"></a> -->
+  <!-- <a href="#" class="arrow left"></a> -->
+  <a class="next">&#10095;</a>
+  <a class="prev">&#10094;</a>
 </div>
+
 
 </div>
 
