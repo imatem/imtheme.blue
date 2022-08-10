@@ -109,7 +109,7 @@ div.position-3\:4 {
 
   /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: #1D446D;
+    background-color: rgba(29, 68, 109, 75%);
 }
 
 
