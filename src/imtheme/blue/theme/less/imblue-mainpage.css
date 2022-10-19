@@ -112,6 +112,41 @@ div.position-3\:4 {
     background-color: rgba(29, 68, 109, 75%);
 }
 
+/* new section */
+
+.news-toblerone {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.newrotatednews {
+    grid-column-end: span 3;
+}
+
+.toblerone-container {
+    grid-column-end: span 1;
+}
+
+.section_plecas {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+}
+
+.section_buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: 4rem;
+}
+
+.new_avisos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
 
 @media (min-width: 768px) {
     .main-wrapper {

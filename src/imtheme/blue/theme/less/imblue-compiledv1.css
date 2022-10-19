@@ -423,26 +423,6 @@ footer {
     grid-column-gap: 24px;
 }
 
-.news-toblerone {
-    display: block;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.newrotatednews {
-    grid-column-end: span 3;
-}
-
-.toblerone-container {
-    grid-column-end: span 1;
-}
-
-.section_buttons,
-.section_plecas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 @media (min-width: 660px) {
     .social-media img {
         margin-right: 5px;
