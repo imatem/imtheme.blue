@@ -661,7 +661,7 @@ div.collection_im_without_summary div.documentByLine{
 
 .standard-topic {
     margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     color: #2c4E78;
 }
 
