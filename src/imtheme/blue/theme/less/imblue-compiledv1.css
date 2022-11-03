@@ -682,7 +682,7 @@ div.collection_im_without_summary div.documentByLine{
 
 #rotatednews ul {
     list-style: none;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 #rotatednews li a{
