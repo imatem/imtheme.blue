@@ -1,7 +1,7 @@
 /* Main */
 .main-wrapper {
     display: grid;
-    margin-top: 30px;
+    margin-top: 16px;
 }
 
 
@@ -11,7 +11,7 @@
 
 #wrapper-sb-slider {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .arrow {
@@ -112,28 +112,80 @@ div.position-3\:4 {
     background-color: rgba(29, 68, 109, 75%);
 }
 
+/* new section */
+
+.news-toblerone {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.newrotatednews {
+    grid-column-end: span 3;
+}
+
+.newrotatednews h2 a,
+.newrotatednews h2 a:visited{
+    text-decoration: none;
+    color: #2C4E78;
+}
+
+.toblerone-container {
+    grid-column-end: span 1;
+}
+
+.section_plecas {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 16px;
+    margin-bottom: 16px;
+    justify-items: center;
+}
+
+.section_buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    justify-items: center;
+}
+
+#avisos h2 a,
+.newrotatednews h2 a:visited {
+    text-decoration: none;
+    color: #2C4E78;
+
+}
+
+.new_avisos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 16px;
+    column-gap: 10px;
+}
+
+.columnew-container{
+    background-color: #dde9f2;
+}
+
+.tileItem {
+    margin-left: 10px;
+}
+
 
 @media (min-width: 768px) {
     .main-wrapper {
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 3fr 1fr;
         grid-template-areas:
-            "a b c"
-            "a b d"
-            "a b d"
-            "a b d";
+            "a  c";
         column-gap: 40px;
         justify-content: center;
     }
 
-    .column2-container {
-        grid-area: d;
-    }
 
-    .content-container {
-        grid-area: b;
-    }
-
-    .column1-container {
+    .newrotatednews {
         grid-area: a;
     }
 
@@ -142,7 +194,7 @@ div.position-3\:4 {
     }
 
     .toblerone-container h2 {
-        margin-bottom: 26px;
+        margin-bottom: 16px;
     }
 
     .standard-topic {
