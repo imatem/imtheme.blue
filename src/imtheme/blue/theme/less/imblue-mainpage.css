@@ -137,8 +137,8 @@ div.position-3\:4 {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-column-gap: 40px;
-    grid-row-gap: 16px;
-    margin-bottom: 16px;
+    grid-row-gap: 12px;
+    margin-bottom: 12px;
     justify-items: center;
 }
 
@@ -146,7 +146,7 @@ div.position-3\:4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 40px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     margin-top: 16px;
     justify-items: center;
 }

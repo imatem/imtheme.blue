@@ -91,15 +91,15 @@ $('#sb-slider').slicebox();
 
 
 /*For rotated news */
-$(function(){
-function run() {
-  var prev = $("#rotated li:first-child");
-  $.unique(prev).each(function(i) {
-    $(this).delay(i*600).slideUp(function() {
-      $(this).appendTo(this.parentNode).slideDown();
-    });
-  });
-}
+// $(function(){
+// function run() {
+//   var prev = $("#rotated li:first-child");
+//   $.unique(prev).each(function(i) {
+//     $(this).delay(i*600).slideUp(function() {
+//       $(this).appendTo(this.parentNode).slideDown();
+//     });
+//   });
+// }
 
-window.setInterval(run,10000);
-});
+// window.setInterval(run,10000);
+// });

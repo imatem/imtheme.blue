@@ -665,9 +665,14 @@ div.collection_im_without_summary div.documentByLine{
     color: #2c4E78;
 }
 
-.standard-topic:nth-last-of-type(even) {
-  background-color: rgba(180, 203, 229, 0.3);
-  border-color: rgba(180, 203, 229, 0.3);
+#avisos,
+#rotatednews {
+    background-color: rgba(180, 203, 229, 0.3);
+    border-color: rgba(180, 203, 229, 0.3);
+}
+
+#rotatednews h2 {
+    background-color: #eff6f7;
 }
 
 .standard-topic h2{
@@ -682,6 +687,9 @@ div.collection_im_without_summary div.documentByLine{
 
 #rotatednews ul {
     list-style: none;
+    border-top-width: 16px;
+    border-top-style: solid;
+    border-top-color: #eff6f7;
     /* padding-left: 10px; */
 }
 
@@ -694,7 +702,7 @@ div.collection_im_without_summary div.documentByLine{
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    border-color: rgba(180, 203, 229, 0.3);
+    border-color: rgba(180, 203, 229, 0.6);
 }
 
 .content-container {
@@ -739,7 +747,7 @@ div.collection_im_without_summary div.documentByLine{
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    border-color: rgba(180, 203, 229, 0.3);
+    border-color: rgba(180, 203, 229, 0.6);
     font-size: 1em;
     font-weight: normal;
 }
@@ -756,7 +764,7 @@ div.collection_im_without_summary div.documentByLine{
 }
 
 .news_imstandard {
-    padding-top: 10px;
+    padding-top: 0px;
     padding-left: 0px;
 }
 
