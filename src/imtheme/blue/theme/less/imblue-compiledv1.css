@@ -630,10 +630,6 @@ footer {
 }
 
 /*For rotated news */
-#rotatednews{
-    height: 340px;
-    max-height: 340px;
-}
 
 ul.ulrotated {
     list-style-type: none;
@@ -842,7 +838,8 @@ div.collection_im_without_summary div.documentByLine{
     font-family: 'Open Sans', sans-serif;
 }
 
-#title-ac307ba2f41b4e0c97eac5ec63df8af8 {
+#title-ac307ba2f41b4e0c97eac5ec63df8af8,
+#title-77536395f5014d9892aa10745b59e67f {
     display: none;
 }
 

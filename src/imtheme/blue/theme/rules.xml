@@ -42,7 +42,7 @@
         <!-- avisos -->
         <replace css:theme="#avisos-content" css:content-children=".news_imstandard" method="raw" />
         <!-- intercambio -->
-        <replace css:theme="#exchanges" css:content=".collection_im_without_summary" method="raw" />
+        <replace css:theme="#exchanges" css:content-children=".collection_im_without_summary" method="raw" />
         <!-- Servicios internos -->
         <replace css:theme=".sevicios-container" css:content=".sevicios-container" method="raw" />
         <replace css:theme="#rotatedmore">
