@@ -790,6 +790,7 @@ div.collection_im_without_summary div.documentByLine{
     color: #2C4E78;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
+    margin-right: 10px;
 }
 
 #rotatedmore:hover {
