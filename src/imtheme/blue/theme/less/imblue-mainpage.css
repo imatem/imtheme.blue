@@ -132,17 +132,41 @@ div.position-3\:4 {
 
 .section_plecas {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "b b"
+    "a c"
+    "e e"
+    "d f";
+    grid-column-gap: 0px;
     grid-row-gap: 12px;
     margin-bottom: 12px;
     justify-items: center;
 }
 
+.informes {
+    grid-area: a;
+}
+.plazas {
+    grid-area: b;
+}
+.transparencia {
+    grid-area: c;
+}
+.covid {
+    grid-area: d;
+}
+.becas{
+    grid-area: e;
+}
+.docencia {
+    grid-area: f;
+}
+
 .section_buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 16px;
+    grid-column-gap: 0px;
     margin-bottom: 12px;
     margin-top: 16px;
     justify-items: center;
@@ -223,9 +247,20 @@ div.position-3\:4 {
     .section_buttons {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 40px;
+        grid-column-gap: 0px;
         margin-bottom: 12px;
         margin-top: 16px;
+        justify-items: center;
+    }
+
+    .section_plecas {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "a b c"
+        "d e f";
+        grid-column-gap: 0px;
+        grid-row-gap: 12px;
+        margin-bottom: 12px;
         justify-items: center;
     }
 
