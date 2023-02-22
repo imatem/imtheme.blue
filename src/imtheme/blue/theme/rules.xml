@@ -27,6 +27,9 @@
     <replace css:theme-children=".submenu-accions" css:content-children="#portal_actions" />
     <copy attributes="href" css:theme="#im-logo" css:content="#portal-logo"  />
 
+    <!-- base tag-->
+    <before css:theme-children="head" css:content="head base" />
+
     <rules css:if-content=".section-inicio">
         <!-- roler -->
         <replace css:theme-children="#slider-wrapper" css:content-children=".slideshow-header-container" />
