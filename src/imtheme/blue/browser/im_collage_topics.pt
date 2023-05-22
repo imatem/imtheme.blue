@@ -41,6 +41,9 @@
                                     ">
 
                   <dt tal:attributes="class python:view.campus_class(item);">
+                      <tal:block tal:condition="item_isCanceled">
+                        <span style="background-color: #FF0000;"><font color="#FFFFFF">&nbsp; Cancelado  &nbsp;</font></span>
+                      </tal:block>
                     <a class="collage_event_title" href="#" tal:content="item_title_or_id" tal:attributes="href item_url" >Title</a>
                   </dt>
                   <dd>
@@ -54,11 +57,7 @@
                       <span class="collage_event_location" tal:content="item_location"/><br/>
                     </tal:block>
                     <tal:block tal:condition="item_seminary">
-                      <span class="collage_event_type" tal:content="item_seminary"/> 
-                      <tal:block tal:condition="item_isCanceled">
-                        <span style="background-color: #FF0000;"><font color="#FFFFFF">&nbsp; Cancelado  &nbsp;</font></span>
-                      </tal:block>
-                      <br/>
+                      <span class="collage_event_type" tal:content="item_seminary"/> <br/>
                     </tal:block>
                   </dd>
                 </tal:block>
