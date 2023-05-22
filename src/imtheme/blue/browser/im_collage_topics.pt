@@ -54,7 +54,11 @@
                       <span class="collage_event_location" tal:content="item_location"/><br/>
                     </tal:block>
                     <tal:block tal:condition="item_seminary">
-                      <span class="collage_event_type" tal:content="item_seminary"/> <br/>
+                      <span class="collage_event_type" tal:content="item_seminary"/> 
+                      <tal:block tal:condition="item_isCanceled">
+                        <span style="background-color: #FF0000;"><font color="#FFFFFF">&nbsp; Cancelado  &nbsp;</font></span>
+                      </tal:block>
+                      <br/>
                     </tal:block>
                   </dd>
                 </tal:block>
