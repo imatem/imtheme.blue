@@ -199,9 +199,9 @@ div.position-3\:4 {
 
 @media (min-width: 768px) {
     .main-wrapper {
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
         grid-template-areas:
-            "a  c";
+            "a b c";
         column-gap: 3px;
         justify-content: center;
     }
