@@ -395,26 +395,27 @@ footer {
 .calendar-ucim::before,
 .calendar-uoim::before,
 .calendar-ujim::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f0c8"; /* Unicode bullet symbol */
-    font-weight: bold;
-    padding-right: 5px;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
 }
 
 .calendar-im::before{
-    color: #1D446D;
+    background-color: #1D446D;
 }
 
 .calendar-ucim::before{
-    color: #468482;
+    background-color: #468482;
 }
 
 .calendar-ujim::before{
-    color: #5E9ACC;
+    background-color: #5E9ACC;
 }
 
 .calendar-uoim::before{
-    color: #2E77CE;
+    background-color: #2E77CE;
 }
 
 .plecas {
