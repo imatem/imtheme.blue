@@ -48,3 +48,55 @@
 .user_info {
     display: flex;
 }
+
+
+/* demo banner */
+
+.Banner.Banner--full {
+    border-left: 0;
+    border-radius: 0;
+    border-right: 0;
+    margin-top: 1px;
+}
+
+
+.Banner.Banner--warning {
+    background-image: linear-gradient(#fff8c5, #fff8c5);
+    border-color: #d4a72c66;
+    color: #1f2328;
+}
+
+
+.Banner {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas: "visual message";
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content;
+    padding: 0.5rem;
+    position: relative;
+  }
+
+
+.Banner .Banner-visual {
+    align-self: start;
+    display: grid;
+    grid-area: visual;
+    padding: .375rem 0.5rem;
+}
+
+.Banner .Banner-visual .octicon {
+    color: #9a6700;
+}
+
+.Banner .Banner-message {
+    align-self: center;
+    grid-area: message;
+    padding: .375rem 0.5rem;
+}
+
+.octicon {
+    display: inline-block;
+    overflow: visible !important;
+    fill: currentColor;
+  }
