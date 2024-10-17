@@ -51,23 +51,9 @@
 
 
 /* demo banner */
-
-.Banner.Banner--full {
-    border-left: 0;
-    border-radius: 0;
-    border-right: 0;
-    margin-top: 1px;
-}
-
-
-.Banner.Banner--warning {
-    background-image: linear-gradient(#fff8c5, #fff8c5);
-    border-color: #d4a72c66;
-    color: #1f2328;
-}
-
-
 .Banner {
+    box-sizing: border-box;
+    border: 1px solid #54aeff66;
     display: grid;
     grid-auto-flow: column;
     grid-template-areas: "visual message";
@@ -75,28 +61,55 @@
     grid-template-rows: min-content;
     padding: 0.5rem;
     position: relative;
-  }
+}
+
+.Banner.Banner--warning {
+    background-image: linear-gradient(#fff8c5, #fff8c5);
+    border-color: #d4a72c66;
+    color: #1f2328;
+}
+
+.Banner.Banner--full {
+    border-left: 0;
+    border-radius: 0;
+    border-right: 0;
+    border-top: 1px;
+    border-bottom: 1px;
+    margin-top: -1px;
+}
 
 
 .Banner .Banner-visual {
     align-self: start;
+    box-sizing: border-box;
     display: grid;
     grid-area: visual;
     padding: .375rem 0.5rem;
 }
 
-.Banner .Banner-visual .octicon {
+.Banner.Banner--warning .Banner-visual .octicon {
     color: #9a6700;
-}
-
-.Banner .Banner-message {
-    align-self: center;
-    grid-area: message;
-    padding: .375rem 0.5rem;
 }
 
 .octicon {
     display: inline-block;
     overflow: visible !important;
     fill: currentColor;
-  }
+} 
+
+.Banner-message p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    line-height: 1.5;
+    font-family: Helvetica,Arial,sans-serif;
+    color: #9a6700;
+}
+
+.Banner .Banner-message {
+    align-self: center;
+    grid-area: message;
+}
+
+.Banner-message .infomatem {
+    font-style: italic;
+}
